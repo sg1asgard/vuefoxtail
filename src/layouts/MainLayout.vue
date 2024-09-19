@@ -6,8 +6,10 @@ import TopPart from '@/components/layout/TopPart.vue'
 <template>
   <div>
     <TopPart />
-    <AsidePart />
-    <slot></slot>
+    <div class="container mx-auto">
+      <AsidePart />
+      <slot></slot>
+    </div>
     <FooterPart />
   </div>
 </template>
