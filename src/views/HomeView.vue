@@ -1,13 +1,12 @@
 <script setup>
+import MainPart from '@/components/layout/MainPart.vue'
 import MainLayout from '@/layouts/MainLayout.vue'
 </script>
 
 <template>
   <MainLayout>
-    <main>
-      <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-    </main>
+    <MainPart>
+      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    </MainPart>
   </MainLayout>
 </template>
