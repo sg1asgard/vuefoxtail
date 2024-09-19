@@ -3,8 +3,10 @@ import { RouterLink } from 'vue-router'
 import HeaderPart from './aside/HeaderPart.vue'
 </script>
 <template>
-  <aside class="z-10 bg-slate-200 p-8">
-    <nav>
+  <aside
+    class="hidden lg:block fixed z-20 inset-0 top-[3.8125rem] left-[max(0px,calc(50%-45rem))] right-auto w-[19rem] pb-10 pl-8 pr-6 overflow-y-auto"
+  >
+    <nav class="lg:text-sm lg:leading-6 relative">
       <div class="group">
         <section class="flex flex-col">
           <HeaderPart>Getting started</HeaderPart>
@@ -16,12 +18,4 @@ import HeaderPart from './aside/HeaderPart.vue'
   </aside>
 </template>
 
-<style lang="css" scoped>
-aside {
-  position: fixed;
-  left: 0;
-  top: 54.5px;
-  width: var(--vfox-sidebar-width-small);
-  height: 100vh;
-}
-</style>
+<style lang="css" scoped></style>
