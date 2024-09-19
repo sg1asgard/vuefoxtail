@@ -27,14 +27,6 @@
   --section-gap: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vfox-c-black);
-    --color-background-soft: var(--vfox-c-black-soft);
-    --color-background-mute: var(--vfox-c-black-mute);
-  }
-}
-
 *,
 *::before,
 *::after {
