@@ -1,0 +1,12 @@
+<script setup>
+import MainPart from '@/components/layout/MainPart.vue'
+import MainLayout from '@/layouts/MainLayout.vue'
+</script>
+
+<template>
+  <MainLayout>
+    <MainPart>
+      <h1 class="text-3xl font-bold underline">Alerts</h1>
+    </MainPart>
+  </MainLayout>
+</template>
