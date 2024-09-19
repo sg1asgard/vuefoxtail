@@ -13,9 +13,9 @@ import TopPart from '@/components/layout/TopPart.vue'
           <div class="max-w-3xl mx-auto pt-10 xl:max-w-none xl:ml-0 xl:mr-[15.5rem] xl:pr-16">
             <slot></slot>
           </div>
+          <FooterPart />
         </div>
       </div>
     </div>
-    <!-- <FooterPart /> -->
   </div>
 </template>
