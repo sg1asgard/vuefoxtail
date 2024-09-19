@@ -25,6 +25,9 @@
   --color-text: var(--vfox-c-black);
 
   --section-gap: 160px;
+
+  --vfox-sidebar-width-mobile: 320px;
+  --vfox-sidebar-width-small: 272px;
 }
 
 *,
