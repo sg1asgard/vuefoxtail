@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 import PageHeader2 from '@/components/presentation/PageHeader2.vue'
 import CodeVisibility from '@/components/presentation/CodeVisibility.vue'
@@ -15,11 +15,11 @@ const test2 = ref(`.btnalert {
     cursor: pointer;
     margin: 4px 2px;
 }`)
-const btnSmall_test = ref(
-  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25">Button</button>
-  <button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
-  <button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
-)
+const btnSmall_test = reactive({
+  code: `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25">Button</button>
+<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
+<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
+})
 const btnSmall = ref(
   `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
@@ -115,9 +115,9 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <CodeWrapper label="test" :codeExample="test2" />
+      <highlightjs language="html" :code="btnSmall_test.code" />
       <CodeVisibility>
-        <CodeWrapper label="small" :codeExample="btnSmall_test" />
+        <CodeWrapper label="small" :codeExample="btnSmall_test.code" />
       </CodeVisibility>
     </div>
   </section>
