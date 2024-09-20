@@ -40,6 +40,7 @@ const btnLarge_v3 = ref(
 <template>
   <section>
     <!-- Button v1 -->
+    <PageHeader2 sectionTitle="outline button" designVersion="bt.v1" />
     <div class="flex flex-row space-x-6 items-center">
       <div>
         <button

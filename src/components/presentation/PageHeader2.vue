@@ -11,7 +11,8 @@ const props = defineProps({
 })
 </script>
 <template>
-  <h2 class="capitalize font-medium text-2xl">
-    {{ props.sectionTitle }} <span class="text-slate-700">({{ props.designVersion }})</span>
+  <h2 class="text-2xl mb-4">
+    <span class="capitalize font-medium">{{ props.sectionTitle }}</span>
+    <span class="text-slate-500 ps-2 font-medium">({{ props.designVersion }})</span>
   </h2>
 </template>
