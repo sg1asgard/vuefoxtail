@@ -3,13 +3,13 @@ import { ref } from 'vue'
 
 // Button v1
 const btnSmall = ref(
-  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-2.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>`
+  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
 const btnMedium = ref(
-  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
+  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
 const btnLarge = ref(
-  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
+  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
 
 // Button v2
@@ -20,7 +20,18 @@ const btnMedium_v2 = ref(
   `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
 const btnLarge_v2 = ref(
-  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
+  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-full px-6 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
+)
+
+// Button v3
+const btnSmall_v3 = ref(
+  `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>`
+)
+const btnMedium_v3 = ref(
+  `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
+)
+const btnLarge_v3 = ref(
+  `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
 </script>
 
@@ -30,7 +41,7 @@ const btnLarge_v2 = ref(
     <div class="flex flex-row space-x-6 items-center">
       <div>
         <button
-          class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-2.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+          class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
         >
           Small Button
         </button>
@@ -38,7 +49,7 @@ const btnLarge_v2 = ref(
 
       <div>
         <button
-          class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-3 py-2 hover:shadow-lg hover:shadow-black/25"
+          class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
         >
           Medium Button
         </button>
@@ -46,7 +57,7 @@ const btnLarge_v2 = ref(
 
       <div>
         <button
-          class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-4 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+          class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
         >
           Large Button
         </button>
@@ -122,7 +133,7 @@ const btnLarge_v2 = ref(
     <div class="flex flex-row space-x-6 items-center">
       <div>
         <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-2.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
         >
           Small Button
         </button>
@@ -130,7 +141,7 @@ const btnLarge_v2 = ref(
 
       <div>
         <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-2 hover:shadow-lg hover:shadow-black/25"
+          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
         >
           Medium Button
         </button>
@@ -138,7 +149,7 @@ const btnLarge_v2 = ref(
 
       <div>
         <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
         >
           Large Button
         </button>
@@ -168,7 +179,7 @@ const btnLarge_v2 = ref(
     <div class="flex flex-row space-x-6 items-center">
       <div>
         <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-2.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
         >
           Small Button
         </button>
@@ -176,7 +187,7 @@ const btnLarge_v2 = ref(
 
       <div>
         <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3 py-2 hover:shadow-lg hover:shadow-black/25"
+          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"
         >
           Medium Button
         </button>
@@ -184,7 +195,7 @@ const btnLarge_v2 = ref(
 
       <div>
         <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-4 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
         >
           Large Button
         </button>
