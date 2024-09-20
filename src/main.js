@@ -3,7 +3,7 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 // highlight.js
-import 'highlight.js/styles/atom-one-dark.css'
+import 'highlight.js/styles/stackoverflow-light.min.css'
 import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
 import hljsVuePlugin from '@highlightjs/vue-plugin'
