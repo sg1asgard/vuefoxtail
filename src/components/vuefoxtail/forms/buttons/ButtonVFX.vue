@@ -35,12 +35,23 @@ const btnMedium_v3 = ref(
 const btnLarge_v3 = ref(
   `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
+
+// Button v4
+const btnSmall_v4 = ref(
+  `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>`
+)
+const btnMedium_v4 = ref(
+  `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
+)
+const btnLarge_v4 = ref(
+  `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
+)
 </script>
 
 <template>
   <section>
     <!-- Button v1 -->
-    <PageHeader2 sectionTitle="outline button" designVersion="bt.v1" />
+    <PageHeader2 sectionTitle="Fill button" designVersion="bt.v1" />
     <div class="flex flex-row space-x-6 items-center">
       <div>
         <button
@@ -76,6 +87,7 @@ const btnLarge_v3 = ref(
 
   <section class="mt-16">
     <!-- Button v2 -->
+    <PageHeader2 sectionTitle="fill button" designVersion="bt.v2" />
     <div class="flex flex-row space-x-6 items-center">
       <div>
         <button
@@ -103,25 +115,15 @@ const btnLarge_v3 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <div>
-        <span>Small</span>
-        <highlightjs autodetect :code="btnSmall_v2" />
-      </div>
-
-      <div>
-        <span>Medium</span>
-        <highlightjs autodetect :code="btnMedium_v2" />
-      </div>
-
-      <div>
-        <span>Large</span>
-        <highlightjs autodetect :code="btnLarge_v2" />
-      </div>
+      <CodeWrapper label="small" :codeExample="btnSmall_v2" />
+      <CodeWrapper label="medium" :codeExample="btnMedium_v2" />
+      <CodeWrapper label="large" :codeExample="btnLarge_v2" />
     </div>
   </section>
 
   <section class="mt-16">
     <!-- Button v3 -->
+    <PageHeader2 sectionTitle="fill button" designVersion="bt.v3" />
     <div class="flex flex-row space-x-6 items-center">
       <div>
         <button
@@ -149,20 +151,9 @@ const btnLarge_v3 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <div>
-        <span>Small</span>
-        <highlightjs autodetect :code="btnSmall_v2" />
-      </div>
-
-      <div>
-        <span>Medium</span>
-        <highlightjs autodetect :code="btnMedium_v2" />
-      </div>
-
-      <div>
-        <span>Large</span>
-        <highlightjs autodetect :code="btnLarge_v2" />
-      </div>
+      <CodeWrapper label="small" :codeExample="btnSmall_v3" />
+      <CodeWrapper label="medium" :codeExample="btnMedium_v3" />
+      <CodeWrapper label="large" :codeExample="btnLarge_v3" />
     </div>
   </section>
 
@@ -196,20 +187,9 @@ const btnLarge_v3 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <div>
-        <span>Small</span>
-        <highlightjs autodetect :code="btnSmall_v2" />
-      </div>
-
-      <div>
-        <span>Medium</span>
-        <highlightjs autodetect :code="btnMedium_v2" />
-      </div>
-
-      <div>
-        <span>Large</span>
-        <highlightjs autodetect :code="btnLarge_v2" />
-      </div>
+      <CodeWrapper label="small" :codeExample="btnSmall_v4" />
+      <CodeWrapper label="medium" :codeExample="btnMedium_v4" />
+      <CodeWrapper label="large" :codeExample="btnLarge_v4" />
     </div>
   </section>
 </template>
