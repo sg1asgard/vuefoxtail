@@ -1,4 +1,5 @@
 <script setup>
+import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 import { ref } from 'vue'
 
 // Button v1
@@ -65,20 +66,9 @@ const btnLarge_v3 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <div>
-        <span>Small</span>
-        <highlightjs autodetect :code="btnSmall" />
-      </div>
-
-      <div>
-        <span>Medium</span>
-        <highlightjs autodetect :code="btnMedium" />
-      </div>
-
-      <div>
-        <span>Large</span>
-        <highlightjs autodetect :code="btnLarge" />
-      </div>
+      <CodeWrapper label="small" :codeExample="btnSmall" />
+      <CodeWrapper label="medium" :codeExample="btnMedium" />
+      <CodeWrapper label="large" :codeExample="btnLarge" />
     </div>
   </section>
 
