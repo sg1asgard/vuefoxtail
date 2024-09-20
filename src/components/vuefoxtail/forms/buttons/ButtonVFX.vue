@@ -91,12 +91,10 @@ const btnLarge_v5 = ref(
 
       <div>
         <button
-          class="flex flex-row bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
+          class="flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
         >
           <span class="grow">Large Button</span>
-          <span>
-            <span class="icon-[ph--heart-light]"></span>
-          </span>
+          <span class="icon-[ph--heart-light]"></span>
         </button>
       </div>
     </div>
