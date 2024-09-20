@@ -2,11 +2,15 @@
 import { ref } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 import PageHeader2 from '@/components/presentation/PageHeader2.vue'
-
-// Tab Component
-const codeVisibility = ref(false)
+import CodeVisibility from '@/components/presentation/CodeVisibility.vue'
 
 // Button v1
+const btnSmall_test = ref(
+  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>
+  <button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
+  <button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
+  `
+)
 const btnSmall = ref(
   `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
@@ -102,12 +106,9 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <div @click="codeVisibility = !codeVisibility">Show code</div>
-      <div :class="`${!codeVisibility ? 'hidden' : 'block'}`">
-        <CodeWrapper ref="tab1" label="small" :codeExample="btnSmall" />
-        <CodeWrapper ref="ta2" label="medium" :codeExample="btnMedium" />
-        <CodeWrapper ref="tab3" label="large" :codeExample="btnLarge" />
-      </div>
+      <CodeVisibility>
+        <CodeWrapper label="small" :codeExample="btnSmall_test" />
+      </CodeVisibility>
     </div>
   </section>
 
