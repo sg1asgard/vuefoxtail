@@ -1,5 +1,6 @@
 <script setup>
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
+import PageHeader2 from '@/components/presentation/PageHeader2.vue'
 import { ref } from 'vue'
 
 // Button v1
@@ -166,6 +167,7 @@ const btnLarge_v3 = ref(
 
   <section class="mt-16">
     <!-- Button v4 -->
+    <PageHeader2 sectionTitle="outline button" designVersion="bt.v4" />
     <div class="flex flex-row space-x-6 items-center">
       <div>
         <button
