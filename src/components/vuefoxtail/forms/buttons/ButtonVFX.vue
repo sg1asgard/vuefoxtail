@@ -95,9 +95,8 @@ const btnLarge_v5 = ref(
         >
           <span class="grow">Large Button</span>
           <span>
-            <Icon icon="ph-light:heart" />
+            <span class="icon-[ph--heart-light]"></span>
           </span>
-          <span class="icon-[ph--heart-light]"></span>
         </button>
       </div>
     </div>
