@@ -1,7 +1,8 @@
 <script setup>
+import { ref } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 import PageHeader2 from '@/components/presentation/PageHeader2.vue'
-import { ref } from 'vue'
+import { Icon } from '@iconify/vue'
 
 // Button v1
 const btnSmall = ref(
@@ -46,6 +47,17 @@ const btnMedium_v4 = ref(
 const btnLarge_v4 = ref(
   `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
+
+// Button v5
+const btnSmall_v5 = ref(
+  `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>`
+)
+const btnMedium_v5 = ref(
+  `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
+)
+const btnLarge_v5 = ref(
+  `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
+)
 </script>
 
 <template>
@@ -74,6 +86,18 @@ const btnLarge_v4 = ref(
           class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
         >
           Large Button
+        </button>
+      </div>
+
+      <div>
+        <button
+          class="flex flex-row bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
+        >
+          <span class="grow">Large Button</span>
+          <span>
+            <Icon icon="ph-light:heart" />
+          </span>
+          <span class="icon-[ph--heart-light]"></span>
         </button>
       </div>
     </div>
@@ -190,6 +214,42 @@ const btnLarge_v4 = ref(
       <CodeWrapper label="small" :codeExample="btnSmall_v4" />
       <CodeWrapper label="medium" :codeExample="btnMedium_v4" />
       <CodeWrapper label="large" :codeExample="btnLarge_v4" />
+    </div>
+  </section>
+
+  <section class="mt-16">
+    <!-- Button v5 -->
+    <PageHeader2 sectionTitle="fill button" designVersion="bt.v5" />
+    <div class="flex flex-row space-x-6 items-center">
+      <div>
+        <button
+          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+        >
+          Small Button
+        </button>
+      </div>
+
+      <div>
+        <button
+          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
+        >
+          Medium Button
+        </button>
+      </div>
+
+      <div>
+        <button
+          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+        >
+          Large Button
+        </button>
+      </div>
+    </div>
+
+    <div class="py-4 flex flex-col space-y-6">
+      <CodeWrapper label="small" :codeExample="btnSmall_v5" />
+      <CodeWrapper label="medium" :codeExample="btnMedium_v5" />
+      <CodeWrapper label="large" :codeExample="btnLarge_v5" />
     </div>
   </section>
 </template>
