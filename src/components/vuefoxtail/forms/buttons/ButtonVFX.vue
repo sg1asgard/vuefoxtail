@@ -1,8 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const code = ref(`
-<div class="code border-2 border-indigo-300 p-4 bg-indigo-200 rounded-md">
+const code = ref(`<div class="code border-2 border-indigo-300 p-4 bg-indigo-200 rounded-md">
   Alert
 </div>`)
 </script>
@@ -12,12 +11,4 @@ const code = ref(`
 
   <div class="border-2 border-indigo-300 p-4 bg-indigo-200 rounded-md">Alert</div>
 </template>
-
-<style lang="css" scoped>
-.hljscode {
-  code.hljs {
-    padding: 24px !important;
-    border-radius: 42px !important;
-  }
-}
-</style>
+<style lang="css" scoped></style>
