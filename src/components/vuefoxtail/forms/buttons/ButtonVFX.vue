@@ -2,7 +2,9 @@
 import { ref } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 import PageHeader2 from '@/components/presentation/PageHeader2.vue'
-import { Icon } from '@iconify/vue'
+
+// Tab Component
+const codeVisibility = ref(false)
 
 // Button v1
 const btnSmall = ref(
@@ -100,9 +102,12 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <CodeWrapper label="small" :codeExample="btnSmall" />
-      <CodeWrapper label="medium" :codeExample="btnMedium" />
-      <CodeWrapper label="large" :codeExample="btnLarge" />
+      <div @click="codeVisibility = !codeVisibility">Show code</div>
+      <div :class="`${!codeVisibility ? 'hidden' : 'block'}`">
+        <CodeWrapper ref="tab1" label="small" :codeExample="btnSmall" />
+        <CodeWrapper ref="ta2" label="medium" :codeExample="btnMedium" />
+        <CodeWrapper ref="tab3" label="large" :codeExample="btnLarge" />
+      </div>
     </div>
   </section>
 
