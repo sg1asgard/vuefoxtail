@@ -1,10 +1,10 @@
 <script setup>
 const props = defineProps({
-  label: {
+  codeExample: {
     type: String,
     required: true
   },
-  codeExample: {
+  lang: {
     type: String,
     required: true
   }
@@ -12,7 +12,6 @@ const props = defineProps({
 </script>
 <template>
   <div>
-    <span class="capitalize">{{ props.label }}</span>
-    <highlightjs :code="props.codeExample" autodetect />
+    <highlightjs :language="props.lang" :code="props.codeExample" :autodetect="false" />
   </div>
 </template>
