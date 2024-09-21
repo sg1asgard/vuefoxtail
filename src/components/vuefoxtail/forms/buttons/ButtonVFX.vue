@@ -104,6 +104,41 @@ const btnSmall_v5 = ref(
             </button>
           </div>
         </div>
+
+        <div class="items-center px-6 py-4 space-y-2">
+          <div class="inline-flex me-2">
+            <button
+              class="bg-gradient-to-t from-indigo-500 to-indigo-400 hover:from-indigo-600 hover:to-indigo-500 text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25 inline-block"
+            >
+              Small Button
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="bg-gradient-to-t from-indigo-500 to-indigo-400 hover:from-indigo-600 hover:to-indigo-500 text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25 inline-block"
+            >
+              Medium Button
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="bg-gradient-to-t from-indigo-500 to-indigo-400 hover:from-indigo-600 hover:to-indigo-500 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25 inline-block"
+            >
+              Large Button
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-indigo-500 to-indigo-400 hover:from-indigo-600 hover:to-indigo-500 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
+            >
+              <span class="grow">Large Button</span>
+              <span class="icon-[ph--heart-light]"></span>
+            </button>
+          </div>
+        </div>
       </template>
 
       <template v-slot:code-example>
@@ -198,6 +233,16 @@ const btnSmall_v5 = ref(
             </button>
           </div>
         </div>
+
+        <div class="items-center px-6 py-4 space-y-2">
+          <div class="inline-flex me-2">
+            <button
+              class="bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+            >
+              Large Button
+            </button>
+          </div>
+        </div>
       </template>
 
       <template v-slot:code-example>
@@ -249,44 +294,6 @@ const btnSmall_v5 = ref(
 
       <template v-slot:code-example>
         <CodeWrapper lang="xml" :codeExample="btnSmall_v4" />
-      </template>
-    </ExampleWrapper>
-  </section>
-
-  <section class="mt-16">
-    <!-- Button v5 -->
-    <PageHeader2 sectionTitle="fill button" designVersion="bt.v5" />
-    <ExampleWrapper>
-      <template v-slot:code-items>
-        <div class="flex flex-row space-x-6 items-center p-6">
-          <div>
-            <button
-              class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
-            >
-              Small Button
-            </button>
-          </div>
-
-          <div>
-            <button
-              class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
-            >
-              Medium Button
-            </button>
-          </div>
-
-          <div>
-            <button
-              class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
-            >
-              Large Button
-            </button>
-          </div>
-        </div>
-      </template>
-
-      <template v-slot:code-example>
-        <CodeWrapper lang="xml" :codeExample="btnSmall_v5" />
       </template>
     </ExampleWrapper>
   </section>
