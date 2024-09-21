@@ -61,49 +61,46 @@ const btnLarge_v5 = ref(
     <!-- Button v1 -->
     <PageHeader2 sectionTitle="Fill button" designVersion="bt.v1" />
     <ExampleWrapper>
-      <div class="flex flex-row space-x-6 items-center p-6">
-        <div>
-          <button
-            class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
-          >
-            Small Button
-          </button>
+      <template v-slot:code-items>
+        <div class="flex flex-row space-x-6 items-center p-6">
+          <div>
+            <button
+              class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+            >
+              Small Button
+            </button>
+          </div>
+
+          <div>
+            <button
+              class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
+            >
+              Medium Button
+            </button>
+          </div>
+
+          <div>
+            <button
+              class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
+            >
+              Large Button
+            </button>
+          </div>
+
+          <div>
+            <button
+              class="flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
+            >
+              <span class="grow">Large Button</span>
+              <span class="icon-[ph--heart-light]"></span>
+            </button>
+          </div>
         </div>
+      </template>
 
-        <div>
-          <button
-            class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
-          >
-            Medium Button
-          </button>
-        </div>
-
-        <div>
-          <button
-            class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
-          >
-            Large Button
-          </button>
-        </div>
-
-        <div>
-          <button
-            class="flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
-          >
-            <span class="grow">Large Button</span>
-            <span class="icon-[ph--heart-light]"></span>
-          </button>
-        </div>
-      </div>
-
-      <div class="flex flex-row px-6 py-4 border-t-[1px] border-b-[1px]">
-        <div class="flex-1">html</div>
-        <div>...</div>
-      </div>
-
-      <div class="flex flex-col space-y-6 p-6">
+      <template v-slot:code-example>
         <CodeWrapper lang="javascript" :codeExample="buttonsV1" />
-      </div>
+      </template>
     </ExampleWrapper>
   </section>
 
