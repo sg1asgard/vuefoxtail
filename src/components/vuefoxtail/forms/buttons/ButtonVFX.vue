@@ -2,42 +2,13 @@
 import { ref, reactive } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 import PageHeader2 from '@/components/presentation/PageHeader2.vue'
-import CodeVisibility from '@/components/presentation/CodeVisibility.vue'
+import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
 
 // Button v1
-const testCSS = ref(`.btnalert {
-    border: none;
-    color: white;
-    padding: 14px 28px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 4px 2px;
-}`)
-const jsTest = ref(`
-export const getGicsSubIndustry = () => {
-  // get GICS Sectors 2 digits
-  let gicsSubIndustry = ref([])
-
-  // working version
-  for (const [key, value] of Object.entries(gicsList.value)) {
-    if (key.toString().length > 6) {
-      gicsSubIndustry.value.push({ key, value })
-    }
-  }
-
-  return { gicsSubIndustry }
-`)
-const btnSmall = ref(
+const buttonsV1 = ref(
   `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25">Button</button>
-  <button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
-)
-const btnMedium = ref(
-  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
-)
-const btnLarge = ref(
-  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
+<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
+<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
 
 // Button v2
@@ -89,58 +60,51 @@ const btnLarge_v5 = ref(
   <section>
     <!-- Button v1 -->
     <PageHeader2 sectionTitle="Fill button" designVersion="bt.v1" />
-    <div class="flex flex-row space-x-6 items-center">
-      <div>
-        <button
-          class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
-        >
-          Small Button
-        </button>
+    <ExampleWrapper>
+      <div class="flex flex-row space-x-6 items-center p-6">
+        <div>
+          <button
+            class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+          >
+            Small Button
+          </button>
+        </div>
+
+        <div>
+          <button
+            class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
+          >
+            Medium Button
+          </button>
+        </div>
+
+        <div>
+          <button
+            class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
+          >
+            Large Button
+          </button>
+        </div>
+
+        <div>
+          <button
+            class="flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
+          >
+            <span class="grow">Large Button</span>
+            <span class="icon-[ph--heart-light]"></span>
+          </button>
+        </div>
       </div>
 
-      <div>
-        <button
-          class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
-        >
-          Medium Button
-        </button>
+      <div class="flex flex-row px-6 py-4 border-t-[1px] border-b-[1px]">
+        <div class="flex-1">html</div>
+        <div>...</div>
       </div>
 
-      <div>
-        <button
-          class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
-        >
-          Large Button
-        </button>
+      <div class="flex flex-col space-y-6 p-6">
+        <CodeWrapper lang="javascript" :codeExample="buttonsV1" />
       </div>
-
-      <div>
-        <button
-          class="flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"
-        >
-          <span class="grow">Large Button</span>
-          <span class="icon-[ph--heart-light]"></span>
-        </button>
-      </div>
-    </div>
-
-    <div class="py-4 flex flex-col space-y-6">
-      <CodeVisibility>
-        <CodeWrapper lang="javascript" :codeExample="jsTest" />
-      </CodeVisibility>
-    </div>
-
-    <div class="py-4 flex flex-col space-y-6">
-      <CodeVisibility>
-        <CodeWrapper lang="css" :codeExample="testCSS" />
-      </CodeVisibility>
-    </div>
-
-    <div class="py-4 flex flex-col space-y-6">
-      <CodeVisibility>
-        <CodeWrapper lang="xml" :codeExample="btnSmall" />
-      </CodeVisibility>
-    </div>
+    </ExampleWrapper>
   </section>
 
   <section class="mt-16">
@@ -173,118 +137,118 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <CodeVisibility>
+      <ExampleWrapper>
         <CodeWrapper lang="xml" :codeExample="btnSmall_v2" />
-      </CodeVisibility>
+      </ExampleWrapper>
     </div>
   </section>
 
   <section class="mt-16">
     <!-- Button v3 -->
     <PageHeader2 sectionTitle="fill button" designVersion="bt.v3" />
-    <div class="flex flex-row space-x-6 items-center">
-      <div>
-        <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
-        >
-          Small Button
-        </button>
+    <ExampleWrapper>
+      <div class="flex flex-row space-x-6 items-center">
+        <div>
+          <button
+            class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+          >
+            Small Button
+          </button>
+        </div>
+
+        <div>
+          <button
+            class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
+          >
+            Medium Button
+          </button>
+        </div>
+
+        <div>
+          <button
+            class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+          >
+            Large Button
+          </button>
+        </div>
       </div>
 
-      <div>
-        <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
-        >
-          Medium Button
-        </button>
-      </div>
-
-      <div>
-        <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
-        >
-          Large Button
-        </button>
-      </div>
-    </div>
-
-    <div class="py-4 flex flex-col space-y-6">
-      <CodeVisibility>
+      <div class="py-4 flex flex-col space-y-6">
         <CodeWrapper lang="xml" :codeExample="btnSmall_v3" />
-      </CodeVisibility>
-    </div>
+      </div>
+    </ExampleWrapper>
   </section>
 
   <section class="mt-16">
     <!-- Button v4 -->
     <PageHeader2 sectionTitle="outline button" designVersion="bt.v4" />
-    <div class="flex flex-row space-x-6 items-center">
-      <div>
-        <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
-        >
-          Small Button
-        </button>
+    <ExampleWrapper>
+      <div class="flex flex-row space-x-6 items-center">
+        <div>
+          <button
+            class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+          >
+            Small Button
+          </button>
+        </div>
+
+        <div>
+          <button
+            class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"
+          >
+            Medium Button
+          </button>
+        </div>
+
+        <div>
+          <button
+            class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+          >
+            Large Button
+          </button>
+        </div>
       </div>
 
-      <div>
-        <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"
-        >
-          Medium Button
-        </button>
-      </div>
-
-      <div>
-        <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
-        >
-          Large Button
-        </button>
-      </div>
-    </div>
-
-    <div class="py-4 flex flex-col space-y-6">
-      <CodeVisibility>
+      <div class="py-4 flex flex-col space-y-6">
         <CodeWrapper lang="xml" :codeExample="btnSmall_v4" />
-      </CodeVisibility>
-    </div>
+      </div>
+    </ExampleWrapper>
   </section>
 
   <section class="mt-16">
     <!-- Button v5 -->
     <PageHeader2 sectionTitle="fill button" designVersion="bt.v5" />
-    <div class="flex flex-row space-x-6 items-center">
-      <div>
-        <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
-        >
-          Small Button
-        </button>
+    <ExampleWrapper>
+      <div class="flex flex-row space-x-6 items-center">
+        <div>
+          <button
+            class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+          >
+            Small Button
+          </button>
+        </div>
+
+        <div>
+          <button
+            class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
+          >
+            Medium Button
+          </button>
+        </div>
+
+        <div>
+          <button
+            class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+          >
+            Large Button
+          </button>
+        </div>
       </div>
 
-      <div>
-        <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
-        >
-          Medium Button
-        </button>
-      </div>
-
-      <div>
-        <button
-          class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
-        >
-          Large Button
-        </button>
-      </div>
-    </div>
-
-    <div class="py-4 flex flex-col space-y-6">
-      <CodeVisibility>
+      <div class="py-4 flex flex-col space-y-6">
         <CodeWrapper lang="xml" :codeExample="btnSmall_v5" />
-      </CodeVisibility>
-    </div>
+      </div>
+    </ExampleWrapper>
   </section>
 </template>
 <style lang="css" scoped></style>
