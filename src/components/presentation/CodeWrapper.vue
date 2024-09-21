@@ -15,13 +15,14 @@ const props = defineProps({
 })
 
 const targetEl = ref('')
-const { text, copy, copied, isSupported } = useClipboard({ targetEl })
+const { copy } = useClipboard({ targetEl })
 </script>
 
 <template>
-  <div class="relative">
-    <span class="absolute z-10 top-3 right-3 flex items-center p-2 rounded-xl bg-slate-900"
-      ><span class="icon-[ph--clipboard-light] text-2xl text-white"></span>
+  <div class="relative group">
+    <span
+      class="absolute z-10 top-3 right-3 cursor-pointer hidden group-hover:flex items-center p-1.5 rounded-lg bg-slate-200"
+      ><span class="icon-[ph--clipboard] text-2xl text-slate-800"></span>
     </span>
     <highlightjs
       :language="props.lang"
