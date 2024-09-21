@@ -1,4 +1,4 @@
-export const copyToClipboard = (tElement) => {
+const copyToClipboard = (tElement) => {
   // Get the text field
   var copyText = document.getElementById(tElement)
 
@@ -12,3 +12,5 @@ export const copyToClipboard = (tElement) => {
   // Alert the copied text
   alert('Copied the text: ' + copyText.value)
 }
+
+export default copyToClipboard
