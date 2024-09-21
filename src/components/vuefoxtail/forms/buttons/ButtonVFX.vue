@@ -5,7 +5,7 @@ import PageHeader2 from '@/components/presentation/PageHeader2.vue'
 import CodeVisibility from '@/components/presentation/CodeVisibility.vue'
 
 // Button v1
-const test2 = ref(`.btnalert {
+const testCSS = ref(`.btnalert {
     border: none;
     color: white;
     padding: 14px 28px;
