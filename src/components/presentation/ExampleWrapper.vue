@@ -1,11 +1,14 @@
 <script setup>
 import { ref } from 'vue'
+import { v4 as uuidv4 } from 'uuid'
 import copyToClipboard from '@/utils/copytoclipboard'
 
 const copyMe = ref(null)
+const elementID = ref(null)
 
-const test = () => {
-  console.log('value', copyMe)
+const getID = () => {
+  elementID.value = copyMe.value.id
+  copyToClipboard(elementID.value)
 }
 </script>
 <template>
@@ -15,9 +18,9 @@ const test = () => {
       <div class="flex-1">html</div>
       <div>
         <span
-          @click="test(copyMe)"
+          @click="getID()"
           ref="copyMe"
-          id=""
+          :id="uuidv4()"
           class="icon-[ph--clipboard-light] text-2xl"
         ></span>
       </div>

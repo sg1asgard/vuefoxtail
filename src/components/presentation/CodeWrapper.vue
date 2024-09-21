@@ -12,6 +12,6 @@ const props = defineProps({
 </script>
 <template>
   <div>
-    <highlightjs :language="props.lang" :code="props.codeExample" :autodetect="false" />
+    <highlightjs v-clip :language="props.lang" :code="props.codeExample" :autodetect="false" />
   </div>
 </template>
