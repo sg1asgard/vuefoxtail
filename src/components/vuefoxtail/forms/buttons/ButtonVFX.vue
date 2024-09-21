@@ -30,7 +30,8 @@ export const getGicsSubIndustry = () => {
   return { gicsSubIndustry }
 `)
 const btnSmall = ref(
-  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>`
+  `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25">Button</button>
+  <button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
 const btnMedium = ref(
   `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
@@ -124,10 +125,21 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <highlightjs autodetect :code="jsTest" />
-      <!-- <CodeVisibility>
-        <CodeWrapper label="small" :codeExample="btnSmall_test.code" />
-      </CodeVisibility> -->
+      <CodeVisibility>
+        <CodeWrapper label="small" :codeExample="jsTest" />
+      </CodeVisibility>
+    </div>
+
+    <div class="py-4 flex flex-col space-y-6">
+      <CodeVisibility>
+        <CodeWrapper label="small" :codeExample="testCSS" />
+      </CodeVisibility>
+    </div>
+
+    <div class="py-4 flex flex-col space-y-6">
+      <CodeVisibility>
+        <CodeWrapper label="small" :codeExample="btnSmall" />
+      </CodeVisibility>
     </div>
   </section>
 
