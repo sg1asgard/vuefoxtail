@@ -17,8 +17,12 @@ const props = defineProps({
 const targetEl = ref('')
 const { text, copy, copied, isSupported } = useClipboard({ targetEl })
 </script>
+
 <template>
-  <div>
+  <div class="relative">
+    <span class="absolute z-10 top-3 right-3 flex items-center p-2 rounded-xl bg-slate-900"
+      ><span class="icon-[ph--clipboard-light] text-2xl text-white"></span>
+    </span>
     <highlightjs
       :language="props.lang"
       :code="props.codeExample"
