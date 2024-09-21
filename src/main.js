@@ -7,8 +7,11 @@ import 'highlight.js/styles/atom-one-dark.min.css'
 import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
 import css from 'highlight.js/lib/languages/css'
+import html from 'highlight.js/lib/languages/vbscript-html'
 import hljsVuePlugin from '@highlightjs/vue-plugin'
-hljs.registerLanguage('javascript', javascript, 'css', css)
+hljs.registerLanguage('javascript', javascript)
+hljs.registerLanguage('html', html)
+hljs.registerLanguage('css', css)
 hljs.highlightAll()
 
 import App from './App.vue'

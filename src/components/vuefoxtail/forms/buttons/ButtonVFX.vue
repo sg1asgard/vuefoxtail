@@ -115,9 +115,10 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <CodeVisibility>
+      <highlightjs autodetect :code="btnSmall_test.code" />
+      <!-- <CodeVisibility>
         <CodeWrapper label="small" :codeExample="btnSmall_test.code" />
-      </CodeVisibility>
+      </CodeVisibility> -->
     </div>
   </section>
 
