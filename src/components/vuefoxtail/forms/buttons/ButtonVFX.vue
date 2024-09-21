@@ -115,7 +115,6 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <highlightjs language="html" :code="btnSmall_test.code" />
       <CodeVisibility>
         <CodeWrapper label="small" :codeExample="btnSmall_test.code" />
       </CodeVisibility>
@@ -152,9 +151,11 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <CodeWrapper label="small" :codeExample="btnSmall_v2" />
-      <CodeWrapper label="medium" :codeExample="btnMedium_v2" />
-      <CodeWrapper label="large" :codeExample="btnLarge_v2" />
+      <CodeVisibility>
+        <CodeWrapper label="small" :codeExample="btnSmall_v2" />
+        <CodeWrapper label="medium" :codeExample="btnMedium_v2" />
+        <CodeWrapper label="large" :codeExample="btnLarge_v2" />
+      </CodeVisibility>
     </div>
   </section>
 
@@ -188,9 +189,11 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <CodeWrapper label="small" :codeExample="btnSmall_v3" />
-      <CodeWrapper label="medium" :codeExample="btnMedium_v3" />
-      <CodeWrapper label="large" :codeExample="btnLarge_v3" />
+      <CodeVisibility>
+        <CodeWrapper label="small" :codeExample="btnSmall_v3" />
+        <CodeWrapper label="medium" :codeExample="btnMedium_v3" />
+        <CodeWrapper label="large" :codeExample="btnLarge_v3" />
+      </CodeVisibility>
     </div>
   </section>
 
@@ -224,9 +227,11 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <CodeWrapper label="small" :codeExample="btnSmall_v4" />
-      <CodeWrapper label="medium" :codeExample="btnMedium_v4" />
-      <CodeWrapper label="large" :codeExample="btnLarge_v4" />
+      <CodeVisibility>
+        <CodeWrapper label="small" :codeExample="btnSmall_v4" />
+        <CodeWrapper label="medium" :codeExample="btnMedium_v4" />
+        <CodeWrapper label="large" :codeExample="btnLarge_v4" />
+      </CodeVisibility>
     </div>
   </section>
 
@@ -260,9 +265,11 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <CodeWrapper label="small" :codeExample="btnSmall_v5" />
-      <CodeWrapper label="medium" :codeExample="btnMedium_v5" />
-      <CodeWrapper label="large" :codeExample="btnLarge_v5" />
+      <CodeVisibility>
+        <CodeWrapper label="small" :codeExample="btnSmall_v5" />
+        <CodeWrapper label="medium" :codeExample="btnMedium_v5" />
+        <CodeWrapper label="large" :codeExample="btnLarge_v5" />
+      </CodeVisibility>
     </div>
   </section>
 </template>
