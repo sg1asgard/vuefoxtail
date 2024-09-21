@@ -13,6 +13,6 @@ const props = defineProps({
 <template>
   <div>
     <span class="capitalize">{{ props.label }}</span>
-    <highlightjs autodetect :ignoreIllegals="false" :code="props.codeExample" />
+    <highlightjs :code="props.codeExample" autodetect />
   </div>
 </template>

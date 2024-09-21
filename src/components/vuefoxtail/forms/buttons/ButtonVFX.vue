@@ -15,11 +15,20 @@ const testCSS = ref(`.btnalert {
     cursor: pointer;
     margin: 4px 2px;
 }`)
-const btnSmall_test = reactive({
-  code: `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25">Button</button>
-<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
-<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>`
-})
+const jsTest = ref(`
+export const getGicsSubIndustry = () => {
+  // get GICS Sectors 2 digits
+  let gicsSubIndustry = ref([])
+
+  // working version
+  for (const [key, value] of Object.entries(gicsList.value)) {
+    if (key.toString().length > 6) {
+      gicsSubIndustry.value.push({ key, value })
+    }
+  }
+
+  return { gicsSubIndustry }
+`)
 const btnSmall = ref(
   `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>`
 )
@@ -115,7 +124,7 @@ const btnLarge_v5 = ref(
     </div>
 
     <div class="py-4 flex flex-col space-y-6">
-      <highlightjs autodetect :code="btnSmall_test.code" />
+      <highlightjs autodetect :code="jsTest" />
       <!-- <CodeVisibility>
         <CodeWrapper label="small" :codeExample="btnSmall_test.code" />
       </CodeVisibility> -->
