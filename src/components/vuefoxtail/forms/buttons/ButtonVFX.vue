@@ -21,21 +21,39 @@ const buttonsV1 = ref(
 const btnSmall_v2 = ref(
   `<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>
 <button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
-<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-full px-6 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
+<button class="bg-indigo-200 hover:bg-indigo-300/75 rounded-full px-6 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>
+
+// with icon
+<button class="inline-flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25">
+  <span class="grow">Large Button</span>
+  <span class="icon-[ph--heart-light]"></span>
+</button>`
 )
 
 // Button v3
 const btnSmall_v3 = ref(
   `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>
 <button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
-<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
+<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>
+
+// with icon
+<button class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25">
+  <span class="grow">Large Button</span>
+  <span class="icon-[ph--heart-light]"></span>
+</button>`
 )
 
 // Button v4
 const btnSmall_v4 = ref(
   `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>
 <button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
-<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
+<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>
+
+// with icon
+<button class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25">
+  <span class="grow">Large Button</span>
+  <span class="icon-[ph--heart-light]"></span>
+</button>`
 )
 
 // Button v5
@@ -52,7 +70,7 @@ const btnSmall_v5 = ref(
     <PageHeader2 sectionTitle="Fill button" designVersion="bt.v1" />
     <ExampleWrapper>
       <template v-slot:code-items>
-        <div class="items-center p-6">
+        <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-2">
             <button
               class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25 inline-block"
@@ -99,8 +117,8 @@ const btnSmall_v5 = ref(
     <PageHeader2 sectionTitle="fill button" designVersion="bt.v2" />
     <ExampleWrapper>
       <template v-slot:code-items>
-        <div class="flex flex-row space-x-6 items-center p-6">
-          <div>
+        <div class="items-center px-6 py-4 space-y-2">
+          <div class="inline-flex me-2">
             <button
               class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
             >
@@ -108,7 +126,7 @@ const btnSmall_v5 = ref(
             </button>
           </div>
 
-          <div>
+          <div class="inline-flex me-2">
             <button
               class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"
             >
@@ -116,11 +134,20 @@ const btnSmall_v5 = ref(
             </button>
           </div>
 
-          <div>
+          <div class="inline-flex me-2">
             <button
               class="bg-indigo-500 hover:bg-indigo-600 text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
             >
               Button
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="inline-flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+            >
+              <span class="grow">Large Button</span>
+              <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
         </div>
@@ -137,8 +164,8 @@ const btnSmall_v5 = ref(
     <PageHeader2 sectionTitle="fill button" designVersion="bt.v3" />
     <ExampleWrapper>
       <template v-slot:code-items>
-        <div class="flex flex-row space-x-6 items-center p-6">
-          <div>
+        <div class="items-center px-6 py-4 space-y-2">
+          <div class="inline-flex me-2">
             <button
               class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
             >
@@ -146,7 +173,7 @@ const btnSmall_v5 = ref(
             </button>
           </div>
 
-          <div>
+          <div class="inline-flex me-2">
             <button
               class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-4 py-2 hover:shadow-lg hover:shadow-black/25"
             >
@@ -154,11 +181,20 @@ const btnSmall_v5 = ref(
             </button>
           </div>
 
-          <div>
+          <div class="inline-flex me-2">
             <button
               class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
             >
               Large Button
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+            >
+              <span class="grow">Large Button</span>
+              <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
         </div>
@@ -175,8 +211,8 @@ const btnSmall_v5 = ref(
     <PageHeader2 sectionTitle="outline button" designVersion="bt.v4" />
     <ExampleWrapper>
       <template v-slot:code-items>
-        <div class="flex flex-row space-x-6 items-center p-6">
-          <div>
+        <div class="items-center px-6 py-4 space-y-2">
+          <div class="inline-flex me-2">
             <button
               class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
             >
@@ -184,7 +220,7 @@ const btnSmall_v5 = ref(
             </button>
           </div>
 
-          <div>
+          <div class="inline-flex me-2">
             <button
               class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"
             >
@@ -192,11 +228,20 @@ const btnSmall_v5 = ref(
             </button>
           </div>
 
-          <div>
+          <div class="inline-flex me-2">
             <button
               class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
             >
               Large Button
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+            >
+              <span class="grow">Large Button</span>
+              <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
         </div>
