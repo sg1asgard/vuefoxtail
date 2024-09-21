@@ -19,16 +19,15 @@ const { copy } = useClipboard({ targetEl })
 </script>
 
 <template>
-  <div class="relative group">
+  <div class="relative group" @click="copy(targetEl.code)">
     <span
-      class="absolute z-10 top-3 right-3 cursor-pointer hidden group-hover:flex items-center p-1.5 rounded-lg bg-slate-200"
-      ><span class="icon-[ph--clipboard] text-2xl text-slate-800"></span>
+      class="absolute z-10 top-3 right-3 cursor-pointer hidden group-hover:flex items-center p-1.5 rounded-lg bg-slate-200 hover:bg-slate-50 shadow-lg group"
+      ><span class="icon-[ph--clipboard] text-2xl text-slate-800 hover:scale-110"></span>
     </span>
     <highlightjs
       :language="props.lang"
       :code="props.codeExample"
       :autodetect="false"
-      @click="copy(targetEl.code)"
       ref="targetEl"
     />
   </div>
