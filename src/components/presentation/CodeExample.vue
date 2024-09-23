@@ -1,87 +1,54 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 
-// Props
 const props = defineProps({
-  codeHTML: {
-    type: String,
-    default: ''
-  },
-  codeCSS: {
-    type: String,
-    default: ''
-  },
-  codeJS: {
-    type: String,
-    default: ''
-  },
-  isHTML: {
-    type: Boolean
-  },
-  isCSS: {
-    type: Boolean
-  },
-  isJS: {
-    type: Boolean
-  }
+  codeHTML: String,
+  codeCSS: String,
+  codeJS: String,
+  isHTML: Boolean,
+  isCSS: Boolean,
+  isJS: Boolean
 })
 
-// Show, hide html, css, js code boxes
-const html = ref(true)
-const css = ref(false)
-const js = ref(false)
+const activeTab = ref('HTML')
 
-const changeTab = (tab) => {
-  if (tab === 'tabHTML') {
-    ;(html.value = true), (css.value = false), (js.value = false)
-  }
-  if (tab === 'tabCSS') {
-    ;(html.value = false), (css.value = true), (js.value = false)
-  }
-  if (tab === 'tabJS') {
-    ;(html.value = false), (css.value = false), (js.value = true)
-  }
+const allTabs = [
+  { name: 'HTML', prop: 'isHTML', lang: 'xml', code: 'codeHTML' },
+  { name: 'CSS', prop: 'isCSS', lang: 'css', code: 'codeCSS' },
+  { name: 'JavaScript', prop: 'isJS', lang: 'javascript', code: 'codeJS' }
+]
+
+const visibleTabs = computed(() => allTabs.filter((tab) => props[tab.prop]))
+
+const changeTab = (tabName) => {
+  activeTab.value = tabName
 }
 
-onMounted(() => {
-  if (props) {
-    html.value = props.isHTML
-    css.value = props.isCSS
-    js.value = props.isJS
-  }
-})
+const activeTabData = computed(() => visibleTabs.value.find((tab) => tab.name === activeTab.value))
 </script>
 
 <template>
   <div class="flex flex-col space-y-6">
     <div class="flex flex-row px-6 py-4 space-x-2 border-t-[1px] border-b-[1px]">
       <div
-        v-if="props?.isHTML"
-        @click="changeTab('tabHTML')"
-        :class="`${html ? 'bg-indigo-100' : 'hover:bg-indigo-100'} px-4 py-1 rounded-md cursor-pointer`"
+        v-for="tab in visibleTabs"
+        :key="tab.name"
+        @click="changeTab(tab.name)"
+        :class="[
+          activeTab === tab.name ? 'bg-indigo-100' : 'hover:bg-indigo-100',
+          'px-4 py-1 rounded-md cursor-pointer'
+        ]"
       >
-        HTML
-      </div>
-      <div
-        v-if="props?.isCSS"
-        @click="changeTab('tabCSS')"
-        :class="`${css ? 'bg-indigo-100' : 'hover:bg-indigo-100'} px-4 py-1 rounded-md cursor-pointer`"
-      >
-        CSS
-      </div>
-      <div
-        v-if="props?.isJS"
-        @click="changeTab('tabJS')"
-        :class="`${js ? 'bg-indigo-100' : 'hover:bg-indigo-100'} px-4 py-1 rounded-md cursor-pointer`"
-      >
-        JavaScript
+        {{ tab.name }}
       </div>
     </div>
     <div class="flex flex-col space-y-6 px-6 pb-6">
-      <CodeWrapper v-if="html" lang="xml" :codeExample="props?.codeHTML" />
-      <CodeWrapper v-if="css" lang="css" :codeExample="props?.codeCSS" />
-      <CodeWrapper v-if="js" lang="javascript" :codeExample="props?.codeJS" />
+      <CodeWrapper
+        v-if="activeTabData"
+        :lang="activeTabData.lang"
+        :codeExample="props[activeTabData.code]"
+      />
     </div>
   </div>
 </template>
