@@ -7,6 +7,7 @@ import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
 // Show, hide html, css, js code boxes
 const html = ref(true)
 const css = ref(true)
+const js = ref(true)
 
 // Checkbox v1
 const checkboxV1_small = ref(
@@ -27,11 +28,19 @@ const checkboxV1_small = ref(
   <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
 </div>`
 )
+
 const checkboxV1_small_css = ref(
   `input[type='checkbox']:disabled {
   background-color: var(--vfox-c-text-disabled);
 }
 `
+)
+
+const checkboxV1_small_js = ref(
+  `// Show, hide html, css, js code boxes
+const html = ref(true)
+const css = ref(true)
+const js = ref(true)`
 )
 
 const checkboxV1_medium = ref(
@@ -83,7 +92,7 @@ const checkboxV1_large = ref(
     </div>
     <!-- Small -->
     <PageHeader3 sectionTitle="Small" />
-    <ExampleWrapper isHtml isCss>
+    <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-6">
@@ -138,6 +147,7 @@ const checkboxV1_large = ref(
       <template v-slot:code-example>
         <CodeWrapper v-if="html" lang="xml" :codeExample="checkboxV1_small" />
         <CodeWrapper v-if="css" lang="css" :codeExample="checkboxV1_small_css" />
+        <CodeWrapper v-if="js" lang="javascript" :codeExample="checkboxV1_small_js" />
       </template>
     </ExampleWrapper>
 
