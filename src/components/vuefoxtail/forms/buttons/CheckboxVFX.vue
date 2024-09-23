@@ -29,21 +29,83 @@ const checkboxV1_small = ref(
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
-              <input class="rounded-[4px] p-2" type="checkbox" value="" id="flexCheckDefault" />
-              <label class="" for="flexCheckDefault">Default</label>
+              <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultSmall" />
+              <label class="text-sm" for="checkDefaultSmall">Default</label>
             </div>
           </div>
 
           <div class="inline-flex me-2">
             <div class="flex flex-row items-center space-x-2">
               <input
+                class="rounded-[4px]"
+                type="checkbox"
+                value=""
+                id="checkCheckedSmall"
+                checked
+              />
+              <label class="text-sm" for="checkCheckedSmall">Checked</label>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <template v-slot:code-example>
+        <CodeWrapper lang="javascript" :codeExample="checkboxV1_small" />
+      </template>
+    </ExampleWrapper>
+
+    <PageHeader3 sectionTitle="Medium" class="mt-8" />
+    <ExampleWrapper>
+      <template v-slot:code-items>
+        <div class="items-center px-6 py-4 space-y-2">
+          <div class="inline-flex me-6">
+            <div class="flex flex-row items-center space-x-2">
+              <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultMedium" />
+              <label class="text-md" for="checkDefaultMedium">Default</label>
+            </div>
+          </div>
+
+          <div class="inline-flex me-6">
+            <div class="flex flex-row items-center space-x-2">
+              <input
                 class="rounded-[4px] p-2"
                 type="checkbox"
                 value=""
-                id="flexCheckChecked"
+                id="checkCheckedMedium"
                 checked
               />
-              <label class="" for="flexCheckChecked">Checked</label>
+              <label class="text-md" for="checkCheckedMedium">Checked</label>
+            </div>
+          </div>
+
+          <div class="inline-flex me-6">
+            <div class="flex flex-row items-center space-x-2">
+              <input
+                class="rounded-[4px] p-2"
+                type="checkbox"
+                value=""
+                id="checkDefaultDisabledMedium"
+                disabled
+              />
+              <label class="text-md text-slate-600" for="checkDefaultDisabledMedium"
+                >Default Disabled</label
+              >
+            </div>
+          </div>
+
+          <div class="inline-flex me-6">
+            <div class="flex flex-row items-center space-x-2">
+              <input
+                class="rounded-[4px] p-2"
+                type="checkbox"
+                value=""
+                id="checkCheckedDisabledMedium"
+                checked
+                disabled
+              />
+              <label class="text-md text-slate-600" for="checkCheckedDisabledMedium"
+                >Checked Disabled</label
+              >
             </div>
           </div>
         </div>
@@ -60,8 +122,8 @@ const checkboxV1_small = ref(
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
-              <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="flexCheckDefault" />
-              <label class="text-xl" for="flexCheckDefault">Default</label>
+              <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkDefaultLarge" />
+              <label class="text-xl" for="checkDefaultLarge">Default</label>
             </div>
           </div>
 
@@ -71,10 +133,10 @@ const checkboxV1_small = ref(
                 class="rounded-[4px] p-2.5"
                 type="checkbox"
                 value=""
-                id="flexCheckChecked"
+                id="checkCheckedLarge"
                 checked
               />
-              <label class="text-xl" for="flexCheckDefault">Checked</label>
+              <label class="text-xl" for="checkCheckedLarge">Checked</label>
             </div>
           </div>
         </div>
@@ -86,3 +148,9 @@ const checkboxV1_small = ref(
     </ExampleWrapper>
   </section>
 </template>
+
+<style lang="css" scoped>
+input[type='checkbox']:disabled {
+  background-color: var(--vfox-c-text-disabled);
+}
+</style>
