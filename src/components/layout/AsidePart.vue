@@ -21,6 +21,7 @@ import LinkPart from './aside/LinkPart.vue'
           <section class="flex flex-col">
             <HeaderPart>Forms</HeaderPart>
             <RouterLink :to="{ name: 'form_button' }"><LinkPart>Button</LinkPart></RouterLink>
+            <RouterLink :to="{ name: 'form_checkbox' }"><LinkPart>Checkbox</LinkPart></RouterLink>
           </section>
         </li>
       </ul>
@@ -32,5 +33,14 @@ import LinkPart from './aside/LinkPart.vue'
 a {
   font-size: 18px;
   padding: 4px 0px;
+
+  &:hover {
+    border-radius: 6px;
+    background-color: rgb(222, 228, 255);
+  }
+  &.router-link-active {
+    border-radius: 6px;
+    background-color: rgb(222, 228, 255);
+  }
 }
 </style>
