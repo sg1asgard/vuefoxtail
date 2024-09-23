@@ -2,6 +2,7 @@
 import { ref, reactive } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 import PageHeader2 from '@/components/presentation/PageHeader2.vue'
+import PageHeader3 from '@/components/presentation/PageHeader3.vue'
 import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
 
 // Button v1
@@ -70,6 +71,7 @@ const btnSmall_v5 = ref(
     <PageHeader2 sectionTitle="Fill button" designVersion="bt.v1" />
     <ExampleWrapper>
       <template v-slot:code-items>
+        <PageHeader3 sectionTitle="Solid Color" />
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-2">
             <button
