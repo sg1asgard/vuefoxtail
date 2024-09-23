@@ -5,11 +5,61 @@ import PageHeader2 from '@/components/presentation/PageHeader2.vue'
 import PageHeader3 from '@/components/presentation/PageHeader3.vue'
 import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
 
-// Button v1
+// Checkbox v1
 const checkboxV1_small = ref(
   `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="flexCheckDefault" />
-  <label class="" for="flexCheckDefault">Default</label>
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultSmall" />
+  <label class="text-sm" for="checkDefaultSmall">Default</label>
+</div>
+<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedSmall" checked /> 
+  <label class="text-sm" for="checkCheckedSmall">Checked</label>
+</div>
+<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultDisabledSmall" disabled />
+  <label class="text-sm" for="checkDefaultDisabledSmall">Default</label>
+</div>
+<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedDisabledSmall" checked disabled />
+  <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
+</div>`
+)
+
+const checkboxV1_medium = ref(
+  `<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultSmall" />
+  <label class="text-sm" for="checkDefaultSmall">Default</label>
+</div>
+<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedSmall" checked /> 
+  <label class="text-sm" for="checkCheckedSmall">Checked</label>
+</div>
+<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultDisabledSmall" disabled />
+  <label class="text-sm" for="checkDefaultDisabledSmall">Default</label>
+</div>
+<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedDisabledSmall" checked disabled />
+  <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
+</div>`
+)
+
+const checkboxV1_large = ref(
+  `<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultSmall" />
+  <label class="text-sm" for="checkDefaultSmall">Default</label>
+</div>
+<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedSmall" checked /> 
+  <label class="text-sm" for="checkCheckedSmall">Checked</label>
+</div>
+<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultDisabledSmall" disabled />
+  <label class="text-sm" for="checkDefaultDisabledSmall">Default</label>
+</div>
+<div class="flex flex-row items-center space-x-2">
+  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedDisabledSmall" checked disabled />
+  <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
 </div>`
 )
 </script>
@@ -20,9 +70,7 @@ const checkboxV1_small = ref(
       By default, the buttons have three sizes as Small, Medium, Large and one with icon. You can
       add the icon to the rest of the sizes as show in the examples.
     </div>
-    <!-- Button v1 -->
     <!-- Small -->
-    <PageHeader2 sectionTitle="button v1" />
     <PageHeader3 sectionTitle="Small" />
     <ExampleWrapper>
       <template v-slot:code-items>
@@ -139,7 +187,7 @@ const checkboxV1_small = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="javascript" :codeExample="checkboxV1_small" />
+        <CodeWrapper lang="javascript" :codeExample="checkboxV1_medium" />
       </template>
     </ExampleWrapper>
 
@@ -201,7 +249,7 @@ const checkboxV1_small = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="javascript" :codeExample="checkboxV1_small" />
+        <CodeWrapper lang="javascript" :codeExample="checkboxV1_large" />
       </template>
     </ExampleWrapper>
   </section>
