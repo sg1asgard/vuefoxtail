@@ -108,6 +108,13 @@ const btnSmallV4_gradient = ref(
 
 <template>
   <section>
+    <div class="mb-8">
+      <p>
+        This is a collection of buttons. By default, the buttons have three sizes as Small, Medium,
+        Large and one with icon. You can add the icon to the rest of the sizes as show in the
+        examples.
+      </p>
+    </div>
     <!-- Button v1 -->
     <!-- Fill -->
     <PageHeader2 sectionTitle="button v1" />
