@@ -81,7 +81,7 @@ const btnSmallV3_gradient = ref(
 )
 
 // Button v4
-const btnSmall_v4 = ref(
+const btnSmallV4_fill = ref(
   `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>
 <button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
 <button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>
@@ -93,11 +93,16 @@ const btnSmall_v4 = ref(
 </button>`
 )
 
-// Button v5
-const btnSmall_v5 = ref(
-  `<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>
-<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
-<button class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>`
+const btnSmallV4_gradient = ref(
+  `<button class="bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"> Button </button>
+<button class="bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-4 py-2 hover:shadow-lg hover:shadow-black/25"> Button </button>
+<button class="bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"> Button </button>
+
+// with icon
+<button class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25">
+  <span class="grow">Large Button</span>
+  <span class="icon-[ph--heart-light]"></span>
+</button>`
 )
 </script>
 
@@ -389,7 +394,7 @@ const btnSmall_v5 = ref(
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-2">
             <button
-              class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3.5 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+              class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
             >
               Small Button
             </button>
@@ -397,7 +402,7 @@ const btnSmall_v5 = ref(
 
           <div class="inline-flex me-2">
             <button
-              class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-2 hover:shadow-lg hover:shadow-black/25"
+              class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-4 py-2 hover:shadow-lg hover:shadow-black/25"
             >
               Medium Button
             </button>
@@ -405,7 +410,7 @@ const btnSmall_v5 = ref(
 
           <div class="inline-flex me-2">
             <button
-              class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+              class="bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
             >
               Large Button
             </button>
@@ -413,7 +418,7 @@ const btnSmall_v5 = ref(
 
           <div class="inline-flex me-2">
             <button
-              class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+              class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
             >
               <span class="grow">Large Button</span>
               <span class="icon-[ph--heart-light]"></span>
@@ -423,7 +428,51 @@ const btnSmall_v5 = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="xml" :codeExample="btnSmall_v4" />
+        <CodeWrapper lang="xml" :codeExample="btnSmallV4_fill" />
+      </template>
+    </ExampleWrapper>
+
+    <PageHeader3 sectionTitle="gradient color" class="mt-8" />
+    <ExampleWrapper>
+      <template v-slot:code-items>
+        <div class="items-center px-6 py-4 space-y-2">
+          <div class="inline-flex me-2">
+            <button
+              class="bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-3 py-1.5 text-sm hover:shadow-lg hover:shadow-black/25"
+            >
+              Small Button
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-4 py-2 hover:shadow-lg hover:shadow-black/25"
+            >
+              Medium Button
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+            >
+              Large Button
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25"
+            >
+              <span class="grow">Large Button</span>
+              <span class="icon-[ph--heart-light]"></span>
+            </button>
+          </div>
+        </div>
+      </template>
+
+      <template v-slot:code-example>
+        <CodeWrapper lang="xml" :codeExample="btnSmallV4_gradient" />
       </template>
     </ExampleWrapper>
   </section>
