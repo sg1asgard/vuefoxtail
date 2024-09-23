@@ -48,7 +48,7 @@ const changeTab = (tab) => {
       <div
         v-if="props.isHTML"
         @click="changeTab('tabHTML')"
-        :class="`${html ? 'bg-indigo-100' : 'hover:bg-indigo-100'} px-4 py-1 rounded-md cursor-pointer`"
+        :class="`${html || (!css && !js) ? 'bg-indigo-100' : 'hover:bg-indigo-100'} px-4 py-1 rounded-md cursor-pointer`"
       >
         HTML
       </div>

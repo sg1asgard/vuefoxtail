@@ -210,7 +210,7 @@ const checkboxV1_large = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="javascript" :codeExample="checkboxV1_medium" />
+        <CodeExample :codeHTML="checkboxV1_medium" :isHTML="true" />
       </template>
     </ExampleWrapper>
 
