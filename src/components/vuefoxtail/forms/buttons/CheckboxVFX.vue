@@ -128,7 +128,7 @@ const btnSmallV4_gradient = ref(
           </div>
 
           <div class="">
-            <input class="" type="checkbox" value="" id="flexCheckDefault" />
+            <input class="rounded-full" type="checkbox" value="" id="flexCheckDefault" />
             <label class="" for="flexCheckDefault"> Default checkbox </label>
           </div>
 

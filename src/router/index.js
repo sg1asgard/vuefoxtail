@@ -24,18 +24,12 @@ const router = createRouter({
       // notice how only the child route has a name
       children: [
         {
-          path: '',
+          path: 'forms/button',
           name: 'form_button',
           component: () => import('@/views/components/FormButtonView.vue')
-        }
-      ]
-    },
-    {
-      path: '/docs/components',
-      // notice how only the child route has a name
-      children: [
+        },
         {
-          path: '',
+          path: 'forms/checkbox',
           name: 'form_checkbox',
           component: () => import('@/views/components/FormCheckBoxView.vue')
         }
