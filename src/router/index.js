@@ -14,7 +14,7 @@ const router = createRouter({
       children: [
         {
           path: '',
-          name: 'componentAlert',
+          name: 'alert',
           component: () => import('@/views/components/AlertView.vue')
         }
       ]
@@ -25,8 +25,19 @@ const router = createRouter({
       children: [
         {
           path: '',
-          name: 'componentFormButton',
-          component: () => import('@/views/components/FormButtonsView.vue')
+          name: 'form_button',
+          component: () => import('@/views/components/FormButtonView.vue')
+        }
+      ]
+    },
+    {
+      path: '/docs/components',
+      // notice how only the child route has a name
+      children: [
+        {
+          path: '',
+          name: 'form_checkbox',
+          component: () => import('@/views/components/FormCheckBoxView.vue')
         }
       ]
     }

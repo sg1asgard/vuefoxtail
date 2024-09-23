@@ -20,9 +20,7 @@ import LinkPart from './aside/LinkPart.vue'
         <li class="mt-12 lg:mt-8">
           <section class="flex flex-col">
             <HeaderPart>Forms</HeaderPart>
-            <RouterLink :to="{ name: 'componentFormButton' }"
-              ><LinkPart>Button</LinkPart></RouterLink
-            >
+            <RouterLink :to="{ name: 'form_button' }"><LinkPart>Button</LinkPart></RouterLink>
           </section>
         </li>
       </ul>
