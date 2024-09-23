@@ -28,6 +28,19 @@ const props = defineProps({
 const html = ref(true)
 const css = ref(false)
 const js = ref(false)
+
+const changeTab = (tab) => {
+  console.log('clicked tab', tab)
+  if (tab === 'tabHTML') {
+    ;(html.value = true), (css.value = false), (js.value = false)
+  }
+  if (tab === 'tabCSS') {
+    ;(html.value = false), (css.value = true), (js.value = false)
+  }
+  if (tab === 'tabJS') {
+    ;(html.value = false), (css.value = false), (js.value = true)
+  }
+}
 </script>
 
 <template>
@@ -35,21 +48,21 @@ const js = ref(false)
     <div class="flex flex-row px-6 py-4 space-x-2 border-t-[1px] border-b-[1px]">
       <div
         v-if="props.isHTML"
-        @click="$emit('showHTML')"
+        @click="changeTab('tabHTML')"
         class="bg-indigo-100 px-4 py-1 rounded-md cursor-pointer"
       >
         HTML
       </div>
       <div
         v-if="props.isCSS"
-        @click="$emit('showCSS')"
+        @click="changeTab('tabCSS')"
         class="px-4 py-1 rounded-md hover:bg-indigo-100 cursor-pointer"
       >
         CSS
       </div>
       <div
         v-if="props.isJS"
-        @click="$emit('showJS')"
+        @click="changeTab('tabJS')"
         class="px-4 py-1 rounded-md hover:bg-indigo-100 cursor-pointer"
       >
         JavaScript
