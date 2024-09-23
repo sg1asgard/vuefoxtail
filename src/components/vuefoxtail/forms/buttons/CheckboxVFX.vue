@@ -210,7 +210,12 @@ const checkboxV1_large = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeExample :codeCSS="checkboxV1_small_css" :isHTML="false" :isCSS="true" :isJS="false" />
+        <CodeExample
+          :codeCSS="checkboxV1_small_css"
+          :isCSS="true"
+          :codeJS="checkboxV1_small_js"
+          :isJS="true"
+        />
       </template>
     </ExampleWrapper>
 
