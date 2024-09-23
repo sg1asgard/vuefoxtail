@@ -106,7 +106,16 @@ const btnSmall_v5 = ref(
             </button>
           </div>
         </div>
+      </template>
 
+      <template v-slot:code-example>
+        <CodeWrapper lang="javascript" :codeExample="buttonsV1" />
+      </template>
+    </ExampleWrapper>
+
+    <ExampleWrapper class="mt-8">
+      <template v-slot:code-items>
+        <PageHeader3 sectionTitle="Gradient Color" />
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-2">
             <button
