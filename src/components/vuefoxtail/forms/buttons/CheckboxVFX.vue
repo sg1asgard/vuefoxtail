@@ -47,21 +47,22 @@ const checkboxV1_medium = ref(
 
 const checkboxV1_large = ref(
   `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultSmall" />
-  <label class="text-sm" for="checkDefaultSmall">Default</label>
+  <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkDefaultLarge" />
+  <label class="text-xl" for="checkDefaultLarge">Default</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedSmall" checked /> 
-  <label class="text-sm" for="checkCheckedSmall">Checked</label>
+  <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkCheckedLarge" checked />
+  <label class="text-xl" for="checkCheckedLarge">Checked</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultDisabledSmall" disabled />
-  <label class="text-sm" for="checkDefaultDisabledSmall">Default</label>
+  <input class="rounded-[4px] p-2.5"type="checkbox" value="" id="checkDefaultDisabledLarge" disabled />
+  <label class="text-xl text-slate-600" for="checkDefaultDisabledLarge">Default Disabled</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedDisabledSmall" checked disabled />
-  <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
-</div>`
+  <input class="rounded-[4px] p-2.5"type="checkbox" value="" id="checkCheckedDisabledLarge" checked disabled />
+  <label class="text-xl text-slate-600" for="checkCheckedDisabledLarge">Default Disabled</label>
+</div>
+`
 )
 </script>
 
