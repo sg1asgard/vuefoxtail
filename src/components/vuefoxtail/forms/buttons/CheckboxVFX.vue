@@ -3,11 +3,7 @@ import { ref } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 import PageHeader3 from '@/components/presentation/PageHeader3.vue'
 import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
-
-// Show, hide html, css, js code boxes
-const html = ref(true)
-const css = ref(true)
-const js = ref(true)
+import CodeExample from '@/components/presentation/CodeExample.vue'
 
 // Checkbox v1
 const checkboxV1_small = ref(
@@ -145,9 +141,14 @@ const checkboxV1_large = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper v-if="html" lang="xml" :codeExample="checkboxV1_small" />
-        <CodeWrapper v-if="css" lang="css" :codeExample="checkboxV1_small_css" />
-        <CodeWrapper v-if="js" lang="javascript" :codeExample="checkboxV1_small_js" />
+        <CodeExample
+          :codeHTML="checkboxV1_small"
+          :codeCSS="checkboxV1_small_css"
+          :codeJS="checkboxV1_small_js"
+          :isHTML="true"
+          :isCSS="true"
+          :isJS="true"
+        />
       </template>
     </ExampleWrapper>
 
