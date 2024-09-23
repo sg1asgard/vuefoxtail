@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-undef
 const { addDynamicIconSelectors } = require('@iconify/tailwind')
+import forms from '@tailwindcss/forms'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -26,6 +27,7 @@ export default {
     addDynamicIconSelectors({
       prefix: 'icon-hover',
       overrideOnly: true
-    })
+    }),
+    forms
   ]
 }
