@@ -78,7 +78,7 @@ const checkboxV1_large = ref(
     </div>
     <!-- Small -->
     <PageHeader3 sectionTitle="Small" />
-    <ExampleWrapper>
+    <ExampleWrapper isHtml isCss>
       <template v-slot:code-items>
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-6">
