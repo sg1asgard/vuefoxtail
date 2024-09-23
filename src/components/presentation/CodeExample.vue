@@ -30,7 +30,6 @@ const css = ref(false)
 const js = ref(false)
 
 const changeTab = (tab) => {
-  console.log('clicked tab', tab)
   if (tab === 'tabHTML') {
     ;(html.value = true), (css.value = false), (js.value = false)
   }
@@ -49,21 +48,21 @@ const changeTab = (tab) => {
       <div
         v-if="props.isHTML"
         @click="changeTab('tabHTML')"
-        class="bg-indigo-100 px-4 py-1 rounded-md cursor-pointer"
+        :class="`${html ? 'bg-indigo-100' : 'hover:bg-indigo-100'} px-4 py-1 rounded-md cursor-pointer`"
       >
         HTML
       </div>
       <div
         v-if="props.isCSS"
         @click="changeTab('tabCSS')"
-        class="px-4 py-1 rounded-md hover:bg-indigo-100 cursor-pointer"
+        :class="`${css ? 'bg-indigo-100' : 'hover:bg-indigo-100'} px-4 py-1 rounded-md cursor-pointer`"
       >
         CSS
       </div>
       <div
         v-if="props.isJS"
         @click="changeTab('tabJS')"
-        class="px-4 py-1 rounded-md hover:bg-indigo-100 cursor-pointer"
+        :class="`${js ? 'bg-indigo-100' : 'hover:bg-indigo-100'} px-4 py-1 rounded-md cursor-pointer`"
       >
         JavaScript
       </div>
