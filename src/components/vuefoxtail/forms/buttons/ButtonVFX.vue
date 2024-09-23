@@ -38,7 +38,7 @@ const btnSmallV2_fill = ref(
 
 // with icon
 <button class="inline-flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
-  <span class="grow">Large Button</span>
+  <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
 </button>`
 )
@@ -50,7 +50,7 @@ const btnSmallV2_gradient = ref(
 
 // with icon
 <button class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-indigo-500 to-indigo-400 hover:from-indigo-600 hover:to-indigo-500 text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
-  <span class="grow">Large Button</span>
+  <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
 </button>`
 )
@@ -63,7 +63,7 @@ const btnSmallV3_fill = ref(
 
 // with icon
 <button class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
-  <span class="grow">Large Button</span>
+  <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
 </button>`
 )
@@ -75,7 +75,7 @@ const btnSmallV3_gradient = ref(
 
 // with icon
 <button class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
-  <span class="grow">Large Button</span>
+  <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
 </button>`
 )
@@ -88,7 +88,7 @@ const btnSmallV4_fill = ref(
 
 // with icon
 <button class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
-  <span class="grow">Large Button</span>
+  <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
 </button>`
 )
@@ -100,7 +100,7 @@ const btnSmallV4_gradient = ref(
 
 // with icon
 <button class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
-  <span class="grow">Large Button</span>
+  <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
 </button>`
 )
@@ -236,7 +236,7 @@ const btnSmallV4_gradient = ref(
             <button
               class="inline-flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150"
             >
-              <span class="grow">Large Button</span>
+              <span class="grow">With Icon</span>
               <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
@@ -280,7 +280,7 @@ const btnSmallV4_gradient = ref(
             <button
               class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-indigo-500 to-indigo-400 hover:from-indigo-600 hover:to-indigo-500 text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150"
             >
-              <span class="grow">Large Button</span>
+              <span class="grow">With Icon</span>
               <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
@@ -328,7 +328,7 @@ const btnSmallV4_gradient = ref(
             <button
               class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150"
             >
-              <span class="grow">Large Button</span>
+              <span class="grow">With Icon</span>
               <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
@@ -372,7 +372,7 @@ const btnSmallV4_gradient = ref(
             <button
               class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150"
             >
-              <span class="grow">Large Button</span>
+              <span class="grow">With Icon</span>
               <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
@@ -420,7 +420,7 @@ const btnSmallV4_gradient = ref(
             <button
               class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150"
             >
-              <span class="grow">Large Button</span>
+              <span class="grow">With Icon</span>
               <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
@@ -464,7 +464,7 @@ const btnSmallV4_gradient = ref(
             <button
               class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150"
             >
-              <span class="grow">Large Button</span>
+              <span class="grow">With Icon</span>
               <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
