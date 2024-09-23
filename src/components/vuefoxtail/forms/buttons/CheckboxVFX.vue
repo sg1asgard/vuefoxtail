@@ -34,7 +34,7 @@ const checkboxV1_small = ref(
             </div>
           </div>
 
-          <div class="inline-flex me-2">
+          <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
               <input
                 class="rounded-[4px]"
@@ -44,6 +44,33 @@ const checkboxV1_small = ref(
                 checked
               />
               <label class="text-sm" for="checkCheckedSmall">Checked</label>
+            </div>
+          </div>
+
+          <div class="inline-flex me-6">
+            <div class="flex flex-row items-center space-x-2">
+              <input
+                class="rounded-[4px]"
+                type="checkbox"
+                value=""
+                id="checkDefaultDisabledSmall"
+                disabled
+              />
+              <label class="text-sm" for="checkDefaultDisabledSmall">Default</label>
+            </div>
+          </div>
+
+          <div class="inline-flex me-6">
+            <div class="flex flex-row items-center space-x-2">
+              <input
+                class="rounded-[4px]"
+                type="checkbox"
+                value=""
+                id="checkCheckedDisabledSmall"
+                checked
+                disabled
+              />
+              <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
             </div>
           </div>
         </div>
@@ -137,6 +164,37 @@ const checkboxV1_small = ref(
                 checked
               />
               <label class="text-xl" for="checkCheckedLarge">Checked</label>
+            </div>
+          </div>
+
+          <div class="inline-flex me-6">
+            <div class="flex flex-row items-center space-x-2">
+              <input
+                class="rounded-[4px] p-2.5"
+                type="checkbox"
+                value=""
+                id="checkDefaultDisabledLarge"
+                disabled
+              />
+              <label class="text-xl text-slate-600" for="checkDefaultDisabledLarge"
+                >Default Disabled</label
+              >
+            </div>
+          </div>
+
+          <div class="inline-flex me-6">
+            <div class="flex flex-row items-center space-x-2">
+              <input
+                class="rounded-[4px] p-2.5"
+                type="checkbox"
+                value=""
+                id="checkCheckedDisabledLarge"
+                checked
+                disabled
+              />
+              <label class="text-xl text-slate-600" for="checkCheckedDisabledLarge"
+                >Checked Disabled</label
+              >
             </div>
           </div>
         </div>
