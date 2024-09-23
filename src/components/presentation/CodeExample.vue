@@ -1,32 +1,29 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 
 // Props
 const props = defineProps({
   codeHTML: {
     type: String,
-    required: false
+    default: ''
   },
   codeCSS: {
     type: String,
-    required: false
+    default: ''
   },
   codeJS: {
     type: String,
-    required: false
+    default: ''
   },
   isHTML: {
-    type: Boolean,
-    required: false
+    type: Boolean
   },
   isCSS: {
-    type: Boolean,
-    required: false
+    type: Boolean
   },
   isJS: {
-    type: Boolean,
-    required: false
+    type: Boolean
   }
 })
 
@@ -46,6 +43,14 @@ const changeTab = (tab) => {
     ;(html.value = false), (css.value = false), (js.value = true)
   }
 }
+
+onMounted(() => {
+  if (props) {
+    html.value = props.isHTML
+    css.value = props.isCSS
+    js.value = props.isJS
+  }
+})
 </script>
 
 <template>
