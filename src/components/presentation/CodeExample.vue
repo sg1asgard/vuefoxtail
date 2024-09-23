@@ -43,12 +43,12 @@ const changeTab = (tab) => {
 </script>
 
 <template>
-  <div class="flex flex-col space-y-6 p-6">
+  <div class="flex flex-col space-y-6">
     <div class="flex flex-row px-6 py-4 space-x-2 border-t-[1px] border-b-[1px]">
       <div
         v-if="props.isHTML"
         @click="changeTab('tabHTML')"
-        :class="`${html || (!css && !js) ? 'bg-indigo-100' : 'hover:bg-indigo-100'} px-4 py-1 rounded-md cursor-pointer`"
+        :class="`${html ? 'bg-indigo-100' : 'hover:bg-indigo-100'} px-4 py-1 rounded-md cursor-pointer`"
       >
         HTML
       </div>
@@ -67,7 +67,7 @@ const changeTab = (tab) => {
         JavaScript
       </div>
     </div>
-    <div class="flex flex-col space-y-6 p-6">
+    <div class="flex flex-col space-y-6 px-6 pb-6">
       <CodeWrapper v-if="html" lang="xml" :codeExample="props.codeHTML" />
       <CodeWrapper v-if="css" lang="css" :codeExample="props.codeCSS" />
       <CodeWrapper v-if="js" lang="javascript" :codeExample="props.codeJS" />
