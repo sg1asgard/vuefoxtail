@@ -11,8 +11,6 @@ const props = defineProps({
   isJS: Boolean
 })
 
-const activeTab = ref('HTML')
-
 const allTabs = [
   { name: 'HTML', prop: 'isHTML', lang: 'xml', code: 'codeHTML' },
   { name: 'CSS', prop: 'isCSS', lang: 'css', code: 'codeCSS' },
@@ -20,6 +18,13 @@ const allTabs = [
 ]
 
 const visibleTabs = computed(() => allTabs.filter((tab) => props[tab.prop]))
+
+const activeTab = ref('')
+
+// Set the initial active tab to the first visible tab
+if (visibleTabs.value.length > 0) {
+  activeTab.value = visibleTabs.value[0].name
+}
 
 const changeTab = (tabName) => {
   activeTab.value = tabName
