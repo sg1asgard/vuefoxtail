@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
-import PageHeader2 from '@/components/presentation/PageHeader2.vue'
 import PageHeader3 from '@/components/presentation/PageHeader3.vue'
 import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
 
@@ -22,7 +21,12 @@ const checkboxV1_small = ref(
 <div class="flex flex-row items-center space-x-2">
   <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedDisabledSmall" checked disabled />
   <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
-</div>`
+</div>
+
+input[type='checkbox']:disabled {
+  background-color: var(--vfox-c-text-disabled);
+}
+`
 )
 
 const checkboxV1_medium = ref(
