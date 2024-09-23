@@ -50,7 +50,7 @@ const copyText = () => {
       <div
         v-show="!statusCopy"
         @click="copyText"
-        class="cursor-pointer inline-flex items-center p-1.5 rounded-lg border-[1px] border-slate-600 hover:border-indigo-600 bg-slate-950 hover:bg-indigo-600"
+        class="cursor-pointer hidden group-hover:inline-flex items-center p-1.5 rounded-lg border-[1px] border-slate-600 hover:border-indigo-600 bg-slate-950 hover:bg-indigo-600"
       >
         <span class="icon-[ph--clipboard] text-2xl text-white"></span>
       </div>
