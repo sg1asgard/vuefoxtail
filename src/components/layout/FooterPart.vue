@@ -10,7 +10,7 @@ const currentYear = ref(new Date())
     <p>
       Released under the
       <a class="vt-link link link" :href="license.url" target="_blank" rel="noopener noreferrer"
-        >{{ license.name }}License</a
+        >{{ license.name }} License</a
       >.
     </p>
     <p class="copyright">Copyright © 2024 - {{ currentYear.getFullYear() }} George Antohi</p>
