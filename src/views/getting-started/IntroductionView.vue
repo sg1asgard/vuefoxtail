@@ -33,6 +33,11 @@ import MainLayout from '@/layouts/MainLayout.vue'
           properties. It is easy to install, use and configure and in generally comes in small
           factor 10 to 20 kb for most of the projects.
         </p>
+
+        <p>
+          It comes also with great support for Vue, React, Angular, Blade, Svelte, Laravel, and many
+          more other.
+        </p>
       </section>
     </MainPart>
   </MainLayout>
