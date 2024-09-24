@@ -7,5 +7,5 @@ const props = defineProps({
 })
 </script>
 <template>
-  <h1 class="text-3xl font-bold capitalize mb-12">{{ props.pageTitle }}</h1>
+  <h1 class="text-3xl font-bold capitalize mb-8">{{ props.pageTitle }}</h1>
 </template>

@@ -1,13 +1,13 @@
 <script setup>
 const props = defineProps({
   sectionTitle: {
-    type: String || Object,
+    type: String,
     required: true
   }
 })
 </script>
 <template>
-  <h2 class="text-2xl mb-4">
+  <h3 class="text-xl mb-2">
     <span class="capitalize font-medium">{{ props.sectionTitle }}</span>
-  </h2>
+  </h3>
 </template>
