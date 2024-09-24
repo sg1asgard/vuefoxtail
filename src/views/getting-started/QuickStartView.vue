@@ -17,7 +17,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
             Raect, Nuxt, Laravel, Svelte, etc)
           </li>
 
-          <li class="mt-4">
+          <li class="mt-6">
             <strong>Install or include Tailwind CSS</strong> into your project. Checkout the
             detailed documentation on the official
             <a href="https://tailwindcss.com" target="_blank" class="underline"
@@ -26,7 +26,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
             website.
           </li>
 
-          <li class="mt-4">
+          <li class="mt-6">
             <strong>Copy &amp; Paste</strong> components code directly into your code. You're done!
             🎉
           </li>
