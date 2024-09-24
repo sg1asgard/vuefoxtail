@@ -33,6 +33,7 @@ import LinkPart from './aside/LinkPart.vue'
 a {
   font-size: 18px;
   padding: 4px 0px;
+  margin: 1px 0px;
 
   &:hover {
     border-radius: 6px;
