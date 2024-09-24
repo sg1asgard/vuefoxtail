@@ -1,7 +1,7 @@
 <script setup>
 const props = defineProps({
   sectionTitle: {
-    type: String,
+    type: String || Object,
     required: true
   }
 })
