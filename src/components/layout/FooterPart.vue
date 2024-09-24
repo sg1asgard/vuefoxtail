@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import cachyosLogo from '@/assets/logos/cachyos.svg'
+import fedoraLogo from '@/assets/logos/fedora.svg'
+import vueLogo from '@/assets/logos/vue.svg'
 
 const currentYear = ref(new Date())
 </script>
@@ -37,17 +40,13 @@ const currentYear = ref(new Date())
         <div>We ❤️ and support Open Source!</div>
         <div class="mt-4 flex space-x-8 items-center">
           <a href="https://cachyos.org" target="_blank" class="inline-flex items-center">
-            <img
-              src="https://cachyos.org/_astro/logo.DVTdAJi6.svg"
-              alt="CachyOS - https://cachyos.org"
-              class="size-12"
-            />
+            <img :src="cachyosLogo" alt="CachyOS - https://cachyos.org" class="size-12" />
             <span class="text-2xl font-bold ms-4">CachyOS</span>
           </a>
 
           <a href="https://fedoraproject.org" target="_blank" class="inline-flex items-center">
             <img
-              src="https://fedoraproject.org/assets/images/logos/fedora-blue.png"
+              :src="fedoraLogo"
               alt="Fedora Project - https://fedoraproject.org"
               class="max-h-10"
             />
