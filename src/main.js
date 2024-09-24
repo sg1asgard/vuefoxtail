@@ -17,6 +17,14 @@ app.config.globalProperties.license = reactive({
   url: 'https://opensource.org/licenses/MIT',
   name: 'MIT'
 })
+app.config.globalProperties.telegram = reactive({
+  url: 'https://t.me/+TV7u5zm00IVmY2Rk',
+  name: 'Telegram'
+})
+app.config.globalProperties.discord = reactive({
+  url: 'https://discord.gg/aXmpsa7h',
+  name: 'Discord'
+})
 
 app.use(createPinia())
 app.use(router)
