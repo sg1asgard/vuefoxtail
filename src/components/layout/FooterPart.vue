@@ -63,8 +63,14 @@ const currentYear = ref(new Date())
               class="max-h-12"
             />
           </a>
+
+          <a href="https://itsfoss.com" target="_blank" class="inline-flex items-center">
+            <img :src="vueLogo" alt="IT'S FOSS - https://itsfoss.com" class="max-h-12" />
+          </a>
         </div>
       </div>
     </div>
   </footer>
 </template>
+
+<style lang="css" scoped></style>
