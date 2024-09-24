@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 import PageHeader3 from '@/components/presentation/PageHeader3.vue'
 import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
 import CodeExample from '@/components/presentation/CodeExample.vue'

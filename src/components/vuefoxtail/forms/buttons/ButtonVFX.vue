@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from 'vue'
-import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 import PageHeader2 from '@/components/presentation/PageHeader2.vue'
 import PageHeader3 from '@/components/presentation/PageHeader3.vue'
 import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
+import CodeExample from '@/components/presentation/CodeExample.vue'
 
 // Button v1
 const buttonsV1_fill = ref(
@@ -116,7 +116,7 @@ const btnSmallV4_gradient = ref(
     <!-- Fill -->
     <PageHeader2 sectionTitle="button v1" />
     <PageHeader3 sectionTitle="Fill Color" />
-    <ExampleWrapper>
+    <ExampleWrapper isHtml>
       <template v-slot:code-items>
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-2">
@@ -155,7 +155,7 @@ const btnSmallV4_gradient = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="javascript" :codeExample="buttonsV1_fill" />
+        <CodeExample :codeHTML="buttonsV1_fill" :isHTML="true" />
       </template>
     </ExampleWrapper>
 
@@ -200,7 +200,7 @@ const btnSmallV4_gradient = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="javascript" :codeExample="buttonsV1_gradient" />
+        <CodeExample :codeHTML="buttonsV1_gradient" :isHTML="true" />
       </template>
     </ExampleWrapper>
   </section>
@@ -248,7 +248,7 @@ const btnSmallV4_gradient = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="javascript" :codeExample="btnSmallV2_fill" />
+        <CodeExample :codeHTML="btnSmallV2_fill" :isHTML="true" />
       </template>
     </ExampleWrapper>
 
@@ -292,7 +292,7 @@ const btnSmallV4_gradient = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="javascript" :codeExample="btnSmallV2_gradient" />
+        <CodeExample :codeHTML="btnSmallV2_gradient" :isHTML="true" />
       </template>
     </ExampleWrapper>
   </section>
@@ -340,7 +340,7 @@ const btnSmallV4_gradient = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="xml" :codeExample="btnSmallV3_fill" />
+        <CodeExample :codeHTML="btnSmallV3_fill" :isHTML="true" />
       </template>
     </ExampleWrapper>
 
@@ -384,7 +384,7 @@ const btnSmallV4_gradient = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="xml" :codeExample="btnSmallV3_gradient" />
+        <CodeExample :codeHTML="btnSmallV3_gradient" :isHTML="true" />
       </template>
     </ExampleWrapper>
   </section>
@@ -432,7 +432,7 @@ const btnSmallV4_gradient = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="xml" :codeExample="btnSmallV4_fill" />
+        <CodeExample :codeHTML="btnSmallV4_fill" :isHTML="true" />
       </template>
     </ExampleWrapper>
 
@@ -476,7 +476,7 @@ const btnSmallV4_gradient = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeWrapper lang="xml" :codeExample="btnSmallV4_gradient" />
+        <CodeExample :codeHTML="btnSmallV4_gradient" :isHTML="true" />
       </template>
     </ExampleWrapper>
   </section>
