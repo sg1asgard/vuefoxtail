@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router'
       <div
         class="py-4 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0"
       >
-        <RouterLink :to="{ name: 'home' }">VueFoxTail</RouterLink>
+        <RouterLink :to="{ name: 'home' }">{{ appName }}</RouterLink>
       </div>
     </div>
   </div>

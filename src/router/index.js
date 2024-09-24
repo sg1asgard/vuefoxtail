@@ -26,12 +26,12 @@ const router = createRouter({
         {
           path: 'introduction',
           name: 'introduction',
-          component: () => import('@/views/components/AlertView.vue')
+          component: () => import('@/views/getting-started/IntroductionView.vue')
         },
         {
           path: 'quick-start',
           name: 'quick_start',
-          component: () => import('@/views/components/AlertView.vue')
+          component: () => import('@/views/getting-started/QuickStartView.vue')
         }
       ]
     },

@@ -11,6 +11,9 @@ import router from './router'
 
 const app = createApp(App)
 
+// declare global variables
+app.config.globalProperties.appName = 'FoxTail'
+
 app.use(createPinia())
 app.use(router)
 app.use(hljsVuePlugin)
