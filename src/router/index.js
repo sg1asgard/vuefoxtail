@@ -20,6 +20,23 @@ const router = createRouter({
       ]
     },
     {
+      // Getting Started
+      path: '/getting-started',
+      children: [
+        {
+          path: 'introduction',
+          name: 'introduction',
+          component: () => import('@/views/components/AlertView.vue')
+        },
+        {
+          path: 'quick-start',
+          name: 'quick_start',
+          component: () => import('@/views/components/AlertView.vue')
+        }
+      ]
+    },
+    {
+      // Components
       path: '/docs/components',
       // notice how only the child route has a name
       children: [
