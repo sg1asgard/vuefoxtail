@@ -8,7 +8,9 @@ import MainLayout from '@/layouts/MainLayout.vue'
   <MainLayout>
     <MainPart>
       <PageHeader pageTitle="Quick Start" />
-      <p class="mb-12">You can start using {{ appName }} imediatelly following a few easy steps.</p>
+      <p class="mb-12 text-2xl">
+        You can start using {{ appName }} imediatelly following a few easy steps.
+      </p>
 
       <section class="mt-8">
         <ol class="list-decimal list-inside">
