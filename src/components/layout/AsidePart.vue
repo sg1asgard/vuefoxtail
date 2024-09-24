@@ -12,8 +12,10 @@ import LinkPart from './aside/LinkPart.vue'
         <li class="mt-12 lg:mt-8">
           <section class="flex flex-col">
             <HeaderPart>Getting started</HeaderPart>
-            <RouterLink :to="{ name: 'home' }"><LinkPart>Introduction</LinkPart></RouterLink>
-            <RouterLink :to="{ name: 'home' }"><LinkPart>Quick Start</LinkPart></RouterLink>
+            <RouterLink :to="{ name: 'introduction' }"
+              ><LinkPart>Introduction</LinkPart></RouterLink
+            >
+            <RouterLink :to="{ name: 'quick_start' }"><LinkPart>Quick Start</LinkPart></RouterLink>
           </section>
         </li>
 
