@@ -39,6 +39,14 @@ import MainLayout from '@/layouts/MainLayout.vue'
           more other.
         </p>
       </section>
+
+      <section class="mb-8">
+        <PageHeader2 :sectionTitle="`What can I use it for?`" />
+        <p class="mb-4">
+          You can build with it any kind of project you would like to. Checkout out
+          <a :href="license.url" target="_blank" class="underline">License</a>.
+        </p>
+      </section>
     </MainPart>
   </MainLayout>
 </template>
