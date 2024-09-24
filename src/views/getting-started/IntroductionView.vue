@@ -21,7 +21,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
           components and designs every single time we start a brand new project.
         </p>
         <p class="mb-4">
-          Now we have the option to reuse already made components! Isn't that sweet? 🎉
+          Now we have the option to reuse already made components! Isn't that sweet? 😎 🚀
         </p>
       </section>
 

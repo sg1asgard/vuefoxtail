@@ -16,6 +16,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
             <strong>Create a new project</strong> with any preferred library or framework (Vue,
             Raect, Nuxt, Laravel, Svelte, etc)
           </li>
+
           <li class="mt-4">
             <strong>Install or include Tailwind CSS</strong> into your project. Checkout the
             detailed documentation on the official
@@ -23,6 +24,11 @@ import MainLayout from '@/layouts/MainLayout.vue'
               >https://tailwindcss.com</a
             >
             website.
+          </li>
+
+          <li class="mt-4">
+            <strong>Copy &amp; Paste</strong> components code directly into your code. You're done!
+            🎉
           </li>
         </ol>
       </section>
