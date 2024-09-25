@@ -25,7 +25,7 @@ const radioV1_common_csssmall = ref(
 </div>`
 )
 
-const radioV1_common_csscommon_css = ref(
+const radioV1_common_css = ref(
   `// add this once in your main.css
 
 input[type='radio']:disabled {
@@ -148,7 +148,7 @@ const radioV1_common_csslarge = ref(
       <template v-slot:code-example>
         <CodeExample
           :codeHTML="radioV1_common_csssmall"
-          :codeCSS="radioV1_common_csscommon_css"
+          :codeCSS="radioV1_common_css"
           :isHTML="true"
           :isCSS="true"
         />
@@ -225,7 +225,7 @@ const radioV1_common_csslarge = ref(
         <CodeExample
           :codeHTML="radioV1_common_cssmedium"
           :isHTML="true"
-          :codeCSS="radioV1_common_csscommon_css"
+          :codeCSS="radioV1_common_css"
           :isCSS="true"
         />
       </template>
@@ -298,7 +298,12 @@ const radioV1_common_csslarge = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeExample :codeHTML="radioV1_common_csslarge" :isHTML="true" />
+        <CodeExample
+          :codeHTML="radioV1_common_csslarge"
+          :isHTML="true"
+          :codeCSS="radioV1_common_css"
+          :isCSS="true"
+        />
       </template>
     </ExampleWrapper>
   </section>
