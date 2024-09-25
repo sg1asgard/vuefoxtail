@@ -6,12 +6,19 @@ import CodeExample from '@/components/presentation/CodeExample.vue'
 import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 
 // Checkbox v1
-const selectV1_common_csssmall = ref(`...`)
+const selectV1_common_csssmall = ref(
+  `<select class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 active:shadow-lg">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>`
+)
 
 const selectV1_common_css = ref(
   `// add this once in your main.css
 
-input[type='radio']:disabled {
+select:disabled {
   background-color: var(--vfox-c-text-disabled);
 }
 `
