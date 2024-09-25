@@ -6,7 +6,7 @@ import CodeExample from '@/components/presentation/CodeExample.vue'
 import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 
 // Checkbox v1
-const checkboxV1_small = ref(
+const radioV1_common_csssmall = ref(
   `<div class="flex flex-row items-center space-x-2">
   <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultSmall" />
   <label class="text-sm" for="checkDefaultSmall">Default</label>
@@ -25,16 +25,16 @@ const checkboxV1_small = ref(
 </div>`
 )
 
-const checkboxV1_common_css = ref(
+const radioV1_common_csscommon_css = ref(
   `// add this once in your main.css
 
-input[type='checkbox']:disabled {
+input[type='radio']:disabled {
   background-color: var(--vfox-c-text-disabled);
 }
 `
 )
 
-const checkboxV1_medium = ref(
+const radioV1_common_cssmedium = ref(
   `<div class="flex flex-row items-center space-x-2">
   <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultMedium" />
   <label class="text-md" for="checkDefaultMedium">Default</label>
@@ -54,7 +54,7 @@ const checkboxV1_medium = ref(
 `
 )
 
-const checkboxV1_large = ref(
+const radioV1_common_csslarge = ref(
   `<div class="flex flex-row items-center space-x-2">
   <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkDefaultLarge" />
   <label class="text-xl" for="checkDefaultLarge">Default</label>
@@ -99,48 +99,48 @@ const checkboxV1_large = ref(
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
-              <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultSmall" />
-              <label class="text-sm" for="checkDefaultSmall">Default</label>
+              <input type="radio" value="" name="radioDefaultSmall" id="radioDefaultSmall_1" />
+              <label class="text-sm" for="radioDefaultSmall_1">Default</label>
             </div>
           </div>
 
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
               <input
-                class="rounded-[4px]"
-                type="checkbox"
+                type="radio"
                 value=""
-                id="checkCheckedSmall"
+                name="radioDefaultSmall"
+                id="radioCheckedSmall_2"
                 checked
               />
-              <label class="text-sm" for="checkCheckedSmall">Checked</label>
+              <label class="text-sm" for="radioCheckedSmall_2">Checked</label>
             </div>
           </div>
 
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
               <input
-                class="rounded-[4px]"
-                type="checkbox"
+                type="radio"
                 value=""
-                id="checkDefaultDisabledSmall"
+                name="radioDefaultSmall"
+                id="radioDefaultDisabledSmall_1"
                 disabled
               />
-              <label class="text-sm" for="checkDefaultDisabledSmall">Default</label>
+              <label class="text-sm" for="radioDefaultDisabledSmall_1">Default</label>
             </div>
           </div>
 
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
               <input
-                class="rounded-[4px]"
-                type="checkbox"
+                type="radio"
                 value=""
-                id="checkCheckedDisabledSmall"
+                name="radioDefaultSmall"
+                id="radioCheckedDisabledSmall_2"
                 checked
                 disabled
               />
-              <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
+              <label class="text-sm" for="radioCheckedDisabledSmall_2">Checked</label>
             </div>
           </div>
         </div>
@@ -148,8 +148,8 @@ const checkboxV1_large = ref(
 
       <template v-slot:code-example>
         <CodeExample
-          :codeHTML="checkboxV1_small"
-          :codeCSS="checkboxV1_common_css"
+          :codeHTML="radioV1_common_csssmall"
+          :codeCSS="radioV1_common_csscommon_css"
           :isHTML="true"
           :isCSS="true"
         />
@@ -215,9 +215,9 @@ const checkboxV1_large = ref(
 
       <template v-slot:code-example>
         <CodeExample
-          :codeHTML="checkboxV1_medium"
+          :codeHTML="radioV1_common_cssmedium"
           :isHTML="true"
-          :codeCSS="checkboxV1_common_css"
+          :codeCSS="radioV1_common_csscommon_css"
           :isCSS="true"
         />
       </template>
@@ -281,14 +281,14 @@ const checkboxV1_large = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeExample :codeHTML="checkboxV1_large" :isHTML="true" />
+        <CodeExample :codeHTML="radioV1_common_csslarge" :isHTML="true" />
       </template>
     </ExampleWrapper>
   </section>
 </template>
 
 <style lang="css" scoped>
-input[type='checkbox']:disabled {
+input[type='radio']:disabled {
   background-color: var(--vfox-c-text-disabled);
 }
 </style>
