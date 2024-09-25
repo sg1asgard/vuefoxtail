@@ -1,7 +1,7 @@
 <script setup>
 import MainPart from '@/components/layout/MainPart.vue'
 import PageHeader from '@/components/presentation/PageHeader.vue'
-import SelectVFX from '@/components/vuefoxtail/forms/SelectVFX.vue'
+import RadioVFX from '@/components/vuefoxtail/forms/RadioVFX.vue'
 import MainLayout from '@/layouts/MainLayout.vue'
 </script>
 
@@ -11,7 +11,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
       <PageHeader pageTitle="Radio" />
 
       <div class="mt-12">
-        <SelectVFX />
+        <RadioVFX />
       </div>
     </MainPart>
   </MainLayout>
