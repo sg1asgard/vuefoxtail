@@ -40,7 +40,7 @@ const currentYear = ref(new Date())
       </div>
 
       <div class="my-6 text-center">
-        <div>We ❤️ and support Open Source!</div>
+        <div>We ❤️ and support Open Source! Checkout our friends.</div>
         <!-- TODO: ask permissions for logos -->
         <div class="mt-4 flex space-x-8 justify-center items-center">
           <a href="https://cachyos.org" target="_blank" class="inline-flex items-center">
