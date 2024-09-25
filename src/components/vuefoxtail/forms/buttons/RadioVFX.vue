@@ -75,7 +75,6 @@ const checkboxV1_large = ref(
 )
 </script>
 
-<!-- Ct - TL 11:15 cursa -->
 <template>
   <section>
     <div class="mb-12">
