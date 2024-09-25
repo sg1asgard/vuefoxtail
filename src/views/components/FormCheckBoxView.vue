@@ -1,7 +1,7 @@
 <script setup>
 import MainPart from '@/components/layout/MainPart.vue'
 import PageHeader from '@/components/presentation/PageHeader.vue'
-import CheckboxVFX from '@/components/vuefoxtail/forms/buttons/CheckboxVFX.vue'
+import CheckboxVFX from '@/components/vuefoxtail/forms/CheckboxVFX.vue'
 import MainLayout from '@/layouts/MainLayout.vue'
 </script>
 
