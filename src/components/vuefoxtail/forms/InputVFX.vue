@@ -48,9 +48,7 @@ const inputV1_large = ref(
     <PageHeader3 sectionTitle="Small" />
     <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
-        <div
-          class="flex w-100 flex-col md:flex-row items-center px-6 py-4 md:space-x-3 space-y-3 md:space-y-0"
-        >
+        <div class="flex flex-col space-y-3 items-center px-6 py-4">
           <div class="w-full flex-1">
             <input
               class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 focus:shadow-lg"
@@ -61,6 +59,21 @@ const inputV1_large = ref(
           <div class="w-full flex-1">
             <input
               class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 focus:shadow-lg"
+              type="text"
+              placeholder="disabled"
+              disabled
+            />
+          </div>
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-full px-4 py-2 text-sm transition-all ease-in-out duration-150 focus:shadow-lg"
+              type="text"
+              placeholder="default"
+            />
+          </div>
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-full px-4 py-2 text-sm transition-all ease-in-out duration-150 focus:shadow-lg"
               type="text"
               placeholder="disabled"
               disabled
@@ -83,9 +96,7 @@ const inputV1_large = ref(
     <PageHeader3 sectionTitle="Default" class="mt-8" />
     <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
-        <div
-          class="flex w-100 flex-col md:flex-row items-center px-6 py-4 md:space-x-3 space-y-3 md:space-y-0"
-        >
+        <div class="flex flex-col space-y-3 items-center px-6 py-4">
           <div class="w-full flex-1">
             <input
               class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
@@ -96,6 +107,21 @@ const inputV1_large = ref(
           <div class="w-full flex-1">
             <input
               class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
+              type="text"
+              placeholder="disabled"
+              disabled
+            />
+          </div>
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-full px-5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
+              type="text"
+              placeholder="default"
+            />
+          </div>
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-full px-5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
               type="text"
               placeholder="disabled"
               disabled
@@ -118,9 +144,7 @@ const inputV1_large = ref(
     <PageHeader3 sectionTitle="Large" class="mt-8" />
     <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
-        <div
-          class="flex w-100 flex-col md:flex-row items-center px-6 py-4 md:space-x-3 space-y-3 md:space-y-0"
-        >
+        <div class="flex flex-col space-y-3 items-center px-6 py-4">
           <div class="w-full flex-1">
             <input
               class="w-full bg-white border-2 border-slate-300 rounded-md text-xl px-4 py-3 transition-all ease-in-out duration-150 focus:shadow-lg"
@@ -132,6 +156,22 @@ const inputV1_large = ref(
           <div class="w-full flex-1">
             <input
               class="w-full bg-white border-2 border-slate-300 rounded-md text-xl px-4 py-3 transition-all ease-in-out duration-150 focus:shadow-lg"
+              type="text"
+              placeholder="disabled"
+              disabled
+            />
+          </div>
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-full text-xl px-5 py-3 transition-all ease-in-out duration-150 focus:shadow-lg"
+              type="text"
+              placeholder="default"
+            />
+          </div>
+
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-full text-xl px-5 py-3 transition-all ease-in-out duration-150 focus:shadow-lg"
               type="text"
               placeholder="disabled"
               disabled
