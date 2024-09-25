@@ -20,7 +20,15 @@ const alertClasses = computed(() => {
 </script>
 
 <template>
-  <p :class="`p-4 border-s-4 ${alertClasses}`">
+  <p :class="`persentation-alert p-4 border-s-4 ${alertClasses}`">
     <slot></slot>
   </p>
 </template>
+
+<style lang="css">
+.persentation-alert {
+  strong {
+    @apply text-slate-700/90 !important;
+  }
+}
+</style>

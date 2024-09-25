@@ -90,7 +90,7 @@ const checkboxV1_large = ref(
 
       <div class="mt-4">
         <AlertWrapper variant="info">
-          All Form elements require
+          <strong>Checkbox</strong> form element require
           <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
             >@tailwindcss/forms plugin</a
           >.
