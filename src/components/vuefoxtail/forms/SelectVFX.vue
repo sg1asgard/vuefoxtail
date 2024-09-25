@@ -6,7 +6,7 @@ import CodeExample from '@/components/presentation/CodeExample.vue'
 import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 
 // Checkbox v1
-const radioV1_common_csssmall = ref(
+const selectV1_common_csssmall = ref(
   `<div class="flex flex-row items-center space-x-2">
   <input type="radio" value="" name="radioDefaultSmall" id="radioDefaultSmall_1" />
   <label class="text-sm" for="radioDefaultSmall_1">Default</label>
@@ -25,7 +25,7 @@ const radioV1_common_csssmall = ref(
 </div>`
 )
 
-const radioV1_common_css = ref(
+const selectV1_common_css = ref(
   `// add this once in your main.css
 
 input[type='radio']:disabled {
@@ -45,7 +45,7 @@ input[type='radio']:disabled {
 
       <div class="mt-4">
         <AlertWrapper variant="info">
-          <strong>Checkbox</strong> form element require
+          <strong>Select</strong> form element require
           <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
             >@tailwindcss/forms plugin</a
           >.
@@ -108,8 +108,8 @@ input[type='radio']:disabled {
 
       <template v-slot:code-example>
         <CodeExample
-          :codeHTML="radioV1_common_csssmall"
-          :codeCSS="radioV1_common_css"
+          :codeHTML="selectV1_common_csssmall"
+          :codeCSS="selectV1_common_css"
           :isHTML="true"
           :isCSS="true"
         />
