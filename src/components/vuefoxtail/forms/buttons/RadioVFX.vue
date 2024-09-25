@@ -110,10 +110,10 @@ const radioV1_common_csslarge = ref(
                 type="radio"
                 value=""
                 name="radioDefaultSmall"
-                id="radioCheckedSmall_2"
+                id="radioSelectedSmall_1"
                 checked
               />
-              <label class="text-sm" for="radioCheckedSmall_2">Checked</label>
+              <label class="text-sm" for="radioSelectedSmall_1">Checked</label>
             </div>
           </div>
 
@@ -122,7 +122,7 @@ const radioV1_common_csslarge = ref(
               <input
                 type="radio"
                 value=""
-                name="radioDefaultSmall"
+                name="radioDefaultSmall_2"
                 id="radioDefaultDisabledSmall_1"
                 disabled
               />
@@ -135,7 +135,7 @@ const radioV1_common_csslarge = ref(
               <input
                 type="radio"
                 value=""
-                name="radioDefaultSmall"
+                name="radioDefaultSmall_2"
                 id="radioCheckedDisabledSmall_2"
                 checked
                 disabled
@@ -166,36 +166,38 @@ const radioV1_common_csslarge = ref(
                 class="p-2"
                 type="radio"
                 value=""
-                name="radioDefaultSmall"
-                id="checkDefaultMedium"
+                name="radioDefaultMedium"
+                id="radioDefaultMedium_1"
               />
-              <label class="text-md" for="checkDefaultMedium">Default</label>
+              <label class="text-md" for="radioDefaultMedium_1">Default</label>
             </div>
           </div>
 
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
               <input
-                class="rounded-[4px] p-2"
-                type="checkbox"
+                class="p-2"
+                type="radio"
                 value=""
-                id="checkCheckedMedium"
+                name="radioDefaultMedium"
+                id="radioSelectedMedium_1"
                 checked
               />
-              <label class="text-md" for="checkCheckedMedium">Checked</label>
+              <label class="text-md" for="radioSelectedMedium_1">Checked</label>
             </div>
           </div>
 
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
               <input
-                class="rounded-[4px] p-2"
-                type="checkbox"
+                class="p-2"
+                type="radio"
                 value=""
-                id="checkDefaultDisabledMedium"
+                name="radioDefaultMedium_2"
+                id="radioDefaultDisabledMedium_1"
                 disabled
               />
-              <label class="text-md text-slate-600" for="checkDefaultDisabledMedium"
+              <label class="text-md text-slate-600" for="radioDefaultDisabledMedium_1"
                 >Default Disabled</label
               >
             </div>
@@ -204,14 +206,15 @@ const radioV1_common_csslarge = ref(
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
               <input
-                class="rounded-[4px] p-2"
-                type="checkbox"
+                class="p-2"
+                type="radio"
                 value=""
-                id="checkCheckedDisabledMedium"
+                name="radioDefaultMedium_2"
+                id="radioSelectedDisabledMedium_2"
                 checked
                 disabled
               />
-              <label class="text-md text-slate-600" for="checkCheckedDisabledMedium"
+              <label class="text-md text-slate-600" for="radioSelectedDisabledMedium_2"
                 >Checked Disabled</label
               >
             </div>
