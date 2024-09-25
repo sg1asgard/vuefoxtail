@@ -8,16 +8,16 @@ import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 // Checkbox v1
 const radioV1_common_csssmall = ref(
   `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultSmall" />
-  <label class="text-sm" for="checkDefaultSmall">Default</label>
+  <input class="rounded-[4px]" type="checkbox" value="" id="radioDefaultSmall" />
+  <label class="text-sm" for="radioDefaultSmall">Default</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
   <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedSmall" checked /> 
   <label class="text-sm" for="checkCheckedSmall">Checked</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultDisabledSmall" disabled />
-  <label class="text-sm" for="checkDefaultDisabledSmall">Default</label>
+  <input class="rounded-[4px]" type="checkbox" value="" id="radioDefaultDisabledSmall" disabled />
+  <label class="text-sm" for="radioDefaultDisabledSmall">Default</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
   <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedDisabledSmall" checked disabled />
@@ -36,16 +36,16 @@ input[type='radio']:disabled {
 
 const radioV1_common_cssmedium = ref(
   `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultMedium" />
-  <label class="text-md" for="checkDefaultMedium">Default</label>
+  <input class="rounded-[4px] p-2" type="checkbox" value="" id="radioDefaultMedium" />
+  <label class="text-md" for="radioDefaultMedium">Default</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
   <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkCheckedMedium" checked />
   <label class="text-md" for="checkCheckedMedium">Checked</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultDisabledMedium" disabled />
-  <label class="text-md text-slate-600" for="checkDefaultDisabledMedium">Default Disabled</label>
+  <input class="rounded-[4px] p-2" type="checkbox" value="" id="radioDefaultDisabledMedium" disabled />
+  <label class="text-md text-slate-600" for="radioDefaultDisabledMedium">Default Disabled</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
   <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkCheckedDisabledMedium" checked disabled />
@@ -56,16 +56,16 @@ const radioV1_common_cssmedium = ref(
 
 const radioV1_common_csslarge = ref(
   `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkDefaultLarge" />
-  <label class="text-xl" for="checkDefaultLarge">Default</label>
+  <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="radioDefaultLarge" />
+  <label class="text-xl" for="radioDefaultLarge">Default</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
   <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkCheckedLarge" checked />
   <label class="text-xl" for="checkCheckedLarge">Checked</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2.5"type="checkbox" value="" id="checkDefaultDisabledLarge" disabled />
-  <label class="text-xl text-slate-600" for="checkDefaultDisabledLarge">Default Disabled</label>
+  <input class="rounded-[4px] p-2.5"type="checkbox" value="" id="radioDefaultDisabledLarge" disabled />
+  <label class="text-xl text-slate-600" for="radioDefaultDisabledLarge">Default Disabled</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
   <input class="rounded-[4px] p-2.5"type="checkbox" value="" id="checkCheckedDisabledLarge" checked disabled />
@@ -113,7 +113,7 @@ const radioV1_common_csslarge = ref(
                 id="radioSelectedSmall_1"
                 checked
               />
-              <label class="text-sm" for="radioSelectedSmall_1">Checked</label>
+              <label class="text-sm" for="radioSelectedSmall_1">Selected</label>
             </div>
           </div>
 
@@ -136,11 +136,11 @@ const radioV1_common_csslarge = ref(
                 type="radio"
                 value=""
                 name="radioDefaultSmall_2"
-                id="radioCheckedDisabledSmall_2"
+                id="radioSelectedDisabledSmall_2"
                 checked
                 disabled
               />
-              <label class="text-sm" for="radioCheckedDisabledSmall_2">Checked</label>
+              <label class="text-sm" for="radioSelectedDisabledSmall_2">Selected</label>
             </div>
           </div>
         </div>
@@ -183,7 +183,7 @@ const radioV1_common_csslarge = ref(
                 id="radioSelectedMedium_1"
                 checked
               />
-              <label class="text-md" for="radioSelectedMedium_1">Checked</label>
+              <label class="text-md" for="radioSelectedMedium_1">Selected</label>
             </div>
           </div>
 
@@ -238,34 +238,42 @@ const radioV1_common_csslarge = ref(
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
-              <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkDefaultLarge" />
-              <label class="text-xl" for="checkDefaultLarge">Default</label>
+              <input
+                class="p-2.5"
+                type="radio"
+                value=""
+                name="radioDefaultLarge"
+                id="radioDefaultLarge_1"
+              />
+              <label class="text-xl" for="radioDefaultLarge_1">Default</label>
             </div>
           </div>
 
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
               <input
-                class="rounded-[4px] p-2.5"
-                type="checkbox"
+                class="p-2.5"
+                type="radio"
                 value=""
-                id="checkCheckedLarge"
+                name="radioDefaultLarge"
+                id="radioDefaultLarge_2"
                 checked
               />
-              <label class="text-xl" for="checkCheckedLarge">Checked</label>
+              <label class="text-xl" for="radioDefaultLarge_2">Selected</label>
             </div>
           </div>
 
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
               <input
-                class="rounded-[4px] p-2.5"
-                type="checkbox"
+                class="p-2.5"
+                type="radio"
                 value=""
-                id="checkDefaultDisabledLarge"
+                name="radioDefaultLarge_2"
+                id="radioDefaultDisabledLarge_2"
                 disabled
               />
-              <label class="text-xl text-slate-600" for="checkDefaultDisabledLarge"
+              <label class="text-xl text-slate-600" for="radioDefaultDisabledLarge_2"
                 >Default Disabled</label
               >
             </div>
@@ -274,15 +282,16 @@ const radioV1_common_csslarge = ref(
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
               <input
-                class="rounded-[4px] p-2.5"
-                type="checkbox"
+                class="p-2.5"
+                type="radio"
                 value=""
-                id="checkCheckedDisabledLarge"
+                name="radioDefaultLarge_2"
+                id="checkCheckedDisabledLarge_2"
                 checked
                 disabled
               />
-              <label class="text-xl text-slate-600" for="checkCheckedDisabledLarge"
-                >Checked Disabled</label
+              <label class="text-xl text-slate-600" for="checkCheckedDisabledLarge_2"
+                >Selected Disabled</label
               >
             </div>
           </div>
