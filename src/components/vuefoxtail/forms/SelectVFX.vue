@@ -6,24 +6,7 @@ import CodeExample from '@/components/presentation/CodeExample.vue'
 import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 
 // Checkbox v1
-const selectV1_common_csssmall = ref(
-  `<div class="flex flex-row items-center space-x-2">
-  <input type="radio" value="" name="radioDefaultSmall" id="radioDefaultSmall_1" />
-  <label class="text-sm" for="radioDefaultSmall_1">Default</label>
-</div>
-<div class="flex flex-row items-center space-x-2">
-  <input type="radio" value="" name="radioDefaultSmall" id="radioSelectedSmall_1" checked />
-  <label class="text-sm" for="radioSelectedSmall_1">Selected</label>
-</div>
-<div class="flex flex-row items-center space-x-2"> 
-  <input type="radio" value="" name="radioDefaultSmall_2" id="radioDefaultDisabledSmall_1" disabled />
-  <label class="text-sm" for="radioDefaultDisabledSmall_1">Default</label>
-</div>
-<div class="flex flex-row items-center space-x-2">
-  <input type="radio" value="" name="radioDefaultSmall_2" id="radioSelectedDisabledSmall_2" checked disabled />
-  <label class="text-sm" for="radioSelectedDisabledSmall_2">Selected</label>
-</div>`
-)
+const selectV1_common_csssmall = ref(`...`)
 
 const selectV1_common_css = ref(
   `// add this once in your main.css
@@ -57,52 +40,14 @@ input[type='radio']:disabled {
     <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
         <div class="items-center px-6 py-4 space-y-2">
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input type="radio" value="" name="radioDefaultSmall" id="radioDefaultSmall_1" />
-              <label class="text-sm" for="radioDefaultSmall_1">Default</label>
-            </div>
-          </div>
-
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input
-                type="radio"
-                value=""
-                name="radioDefaultSmall"
-                id="radioSelectedSmall_1"
-                checked
-              />
-              <label class="text-sm" for="radioSelectedSmall_1">Selected</label>
-            </div>
-          </div>
-
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input
-                type="radio"
-                value=""
-                name="radioDefaultSmall_2"
-                id="radioDefaultDisabledSmall_1"
-                disabled
-              />
-              <label class="text-sm" for="radioDefaultDisabledSmall_1">Default</label>
-            </div>
-          </div>
-
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input
-                type="radio"
-                value=""
-                name="radioDefaultSmall_2"
-                id="radioSelectedDisabledSmall_2"
-                checked
-                disabled
-              />
-              <label class="text-sm" for="radioSelectedDisabledSmall_2">Selected</label>
-            </div>
-          </div>
+          <select
+            class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 active:shadow-lg"
+          >
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
         </div>
       </template>
 
@@ -119,7 +64,7 @@ input[type='radio']:disabled {
 </template>
 
 <style lang="css" scoped>
-input[type='radio']:disabled {
+select:disabled {
   background-color: var(--vfox-c-text-disabled);
 }
 </style>
