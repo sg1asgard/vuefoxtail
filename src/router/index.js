@@ -59,6 +59,11 @@ const router = createRouter({
           path: 'forms/select',
           name: 'form_select',
           component: () => import('@/views/components/FormSelectView.vue')
+        },
+        {
+          path: 'forms/input',
+          name: 'form_input',
+          component: () => import('@/views/components/FormInputView.vue')
         }
       ]
     }

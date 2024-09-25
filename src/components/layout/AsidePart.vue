@@ -26,6 +26,7 @@ import LinkPart from './aside/LinkPart.vue'
             <RouterLink :to="{ name: 'form_checkbox' }"><LinkPart>Checkbox</LinkPart></RouterLink>
             <RouterLink :to="{ name: 'form_radio' }"><LinkPart>Radio</LinkPart></RouterLink>
             <RouterLink :to="{ name: 'form_select' }"><LinkPart>Select</LinkPart></RouterLink>
+            <RouterLink :to="{ name: 'form_input' }"><LinkPart>Input</LinkPart></RouterLink>
           </section>
         </li>
       </ul>
