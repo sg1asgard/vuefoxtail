@@ -162,7 +162,13 @@ const radioV1_common_csslarge = ref(
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
-              <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultMedium" />
+              <input
+                class="p-2"
+                type="radio"
+                value=""
+                name="radioDefaultSmall"
+                id="checkDefaultMedium"
+              />
               <label class="text-md" for="checkDefaultMedium">Default</label>
             </div>
           </div>
