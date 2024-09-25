@@ -42,31 +42,23 @@ const currentYear = ref(new Date())
       <div class="my-6 text-center">
         <div>We ❤️ and support Open Source!</div>
         <!-- TODO: ask permissions for logos -->
-        <div class="mt-4 flex space-x-8 items-center">
+        <div class="mt-4 flex space-x-8 justify-center items-center">
           <a href="https://cachyos.org" target="_blank" class="inline-flex items-center">
             <img :src="cachyosLogo" alt="CachyOS - https://cachyos.org" class="size-12" />
             <span class="text-2xl font-bold ms-4">CachyOS</span>
           </a>
 
-          <a href="https://fedoraproject.org" target="_blank" class="inline-flex items-center">
+          <!-- <a href="https://fedoraproject.org" target="_blank" class="inline-flex items-center">
             <img
               :src="fedoraLogo"
               alt="Fedora Project - https://fedoraproject.org"
               class="max-h-10"
             />
-          </a>
+          </a> -->
 
-          <a href="https://itsfoss.com" target="_blank" class="inline-flex items-center">
-            <img
-              src="https://itsfoss.com/content/images/size/w300/format/webp/2023/01/itsfoss-logo.png"
-              alt="IT'S FOSS - https://itsfoss.com"
-              class="max-h-12"
-            />
-          </a>
-
-          <a href="https://itsfoss.com" target="_blank" class="inline-flex items-center">
+          <!-- <a href="https://itsfoss.com" target="_blank" class="inline-flex items-center">
             <img :src="vueLogo" alt="IT'S FOSS - https://itsfoss.com" class="max-h-12" />
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
