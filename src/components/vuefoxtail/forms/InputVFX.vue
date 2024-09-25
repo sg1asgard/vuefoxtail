@@ -46,14 +46,57 @@ const inputV1_small = ref(
     <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
         <div class="items-center px-6 py-4 space-y-2">
-          <select
+          <input
             class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 active:shadow-lg"
-          >
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+            type="text"
+            placeholder="input"
+          />
+        </div>
+      </template>
+
+      <template v-slot:code-example>
+        <CodeExample
+          :codeHTML="inputV1_small"
+          :codeCSS="inputV1_common_css"
+          :isHTML="true"
+          :isCSS="true"
+        />
+      </template>
+    </ExampleWrapper>
+
+    <!-- Default -->
+    <PageHeader3 sectionTitle="Default" class="mt-8" />
+    <ExampleWrapper isHtml isCss isJs>
+      <template v-slot:code-items>
+        <div class="items-center px-6 py-4 space-y-2">
+          <input
+            class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 active:shadow-lg"
+            type="text"
+            placeholder="input"
+          />
+        </div>
+      </template>
+
+      <template v-slot:code-example>
+        <CodeExample
+          :codeHTML="inputV1_small"
+          :codeCSS="inputV1_common_css"
+          :isHTML="true"
+          :isCSS="true"
+        />
+      </template>
+    </ExampleWrapper>
+
+    <!-- Large -->
+    <PageHeader3 sectionTitle="Large" class="mt-8" />
+    <ExampleWrapper isHtml isCss isJs>
+      <template v-slot:code-items>
+        <div class="items-center px-6 py-4 space-y-2">
+          <input
+            class="w-full bg-white border-2 border-slate-300 rounded-md text-xl px-4 py-3 transition-all ease-in-out duration-150 active:shadow-lg"
+            type="text"
+            placeholder="input"
+          />
         </div>
       </template>
 
