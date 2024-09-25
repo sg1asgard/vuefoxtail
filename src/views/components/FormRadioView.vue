@@ -8,7 +8,7 @@ import MainLayout from '@/layouts/MainLayout.vue'
 <template>
   <MainLayout>
     <MainPart>
-      <PageHeader pageTitle="Checkbox" />
+      <PageHeader pageTitle="Radio" />
 
       <div class="mt-12">
         <CheckboxVFX />

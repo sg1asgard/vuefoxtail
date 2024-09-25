@@ -25,18 +25,13 @@ const checkboxV1_small = ref(
 </div>`
 )
 
-const checkboxV1_small_css = ref(
-  `input[type='checkbox']:disabled {
+const checkboxV1_common_css = ref(
+  `// add this once in your main.css
+
+input[type='checkbox']:disabled {
   background-color: var(--vfox-c-text-disabled);
 }
 `
-)
-
-const checkboxV1_small_js = ref(
-  `// Show, hide html, css, js code boxes
-const html = ref(true)
-const css = ref(true)
-const js = ref(true)`
 )
 
 const checkboxV1_medium = ref(
@@ -155,7 +150,7 @@ const checkboxV1_large = ref(
       <template v-slot:code-example>
         <CodeExample
           :codeHTML="checkboxV1_small"
-          :codeCSS="checkboxV1_small_css"
+          :codeCSS="checkboxV1_common_css"
           :isHTML="true"
           :isCSS="true"
         />
@@ -221,10 +216,10 @@ const checkboxV1_large = ref(
 
       <template v-slot:code-example>
         <CodeExample
-          :codeCSS="checkboxV1_small_css"
+          :codeHTML="checkboxV1_medium"
+          :isHTML="true"
+          :codeCSS="checkboxV1_common_css"
           :isCSS="true"
-          :codeJS="checkboxV1_small_js"
-          :isJS="true"
         />
       </template>
     </ExampleWrapper>
