@@ -9,8 +9,8 @@ import TopPart from '@/components/layout/TopPart.vue'
     <div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
         <AsidePart />
-        <div class="main-content lg:pl-[19.5rem]">
-          <div class="mx-auto pt-10">
+        <div class="lg:pl-[19.5rem]">
+          <div class="main-content mx-auto pt-10">
             <slot></slot>
           </div>
           <FooterPart />
