@@ -49,20 +49,21 @@ const inputV1_large = ref(
     <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
         <div
-          class="flex w-100 flex-col md:flex-row items-center px-6 py-4 md:space-x-6 space-y-2 md:space-y-0"
+          class="flex w-100 flex-col md:flex-row items-center px-6 py-4 md:space-x-3 space-y-3 md:space-y-0"
         >
           <div class="w-full flex-1">
             <input
-              class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 active:shadow-lg"
+              class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 focus:shadow-lg"
               type="text"
-              placeholder="input"
+              placeholder="default"
             />
           </div>
           <div class="w-full flex-1">
             <input
-              class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 active:shadow-lg"
+              class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 focus:shadow-lg"
               type="text"
-              placeholder="input"
+              placeholder="disabled"
+              disabled
             />
           </div>
         </div>
@@ -82,12 +83,24 @@ const inputV1_large = ref(
     <PageHeader3 sectionTitle="Default" class="mt-8" />
     <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
-        <div class="items-center px-6 py-4 space-y-2">
-          <input
-            class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 active:shadow-lg"
-            type="text"
-            placeholder="input"
-          />
+        <div
+          class="flex w-100 flex-col md:flex-row items-center px-6 py-4 md:space-x-3 space-y-3 md:space-y-0"
+        >
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
+              type="text"
+              placeholder="default"
+            />
+          </div>
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
+              type="text"
+              placeholder="disabled"
+              disabled
+            />
+          </div>
         </div>
       </template>
 
@@ -105,12 +118,25 @@ const inputV1_large = ref(
     <PageHeader3 sectionTitle="Large" class="mt-8" />
     <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
-        <div class="items-center px-6 py-4 space-y-2">
-          <input
-            class="w-full bg-white border-2 border-slate-300 rounded-md text-xl px-4 py-3 transition-all ease-in-out duration-150 active:shadow-lg"
-            type="text"
-            placeholder="input"
-          />
+        <div
+          class="flex w-100 flex-col md:flex-row items-center px-6 py-4 md:space-x-3 space-y-3 md:space-y-0"
+        >
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-md text-xl px-4 py-3 transition-all ease-in-out duration-150 focus:shadow-lg"
+              type="text"
+              placeholder="default"
+            />
+          </div>
+
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-md text-xl px-4 py-3 transition-all ease-in-out duration-150 focus:shadow-lg"
+              type="text"
+              placeholder="disabled"
+              disabled
+            />
+          </div>
         </div>
       </template>
 
@@ -127,7 +153,7 @@ const inputV1_large = ref(
 </template>
 
 <style lang="css" scoped>
-select:disabled {
-  background-color: var(--vfox-c-text-disabled);
+input[type='text']:disabled {
+  background-color: var(--color-background-disabled-200);
 }
 </style>

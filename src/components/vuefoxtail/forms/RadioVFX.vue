@@ -311,6 +311,6 @@ const radioV1_common_csslarge = ref(
 
 <style lang="css" scoped>
 input[type='radio']:disabled {
-  background-color: var(--vfox-c-text-disabled);
+  background-color: var(--color-background-disabled-300);
 }
 </style>
