@@ -143,10 +143,8 @@ const checkboxV1_large = ref(
         <CodeExample
           :codeHTML="checkboxV1_small"
           :codeCSS="checkboxV1_small_css"
-          :codeJS="checkboxV1_small_js"
           :isHTML="true"
           :isCSS="true"
-          :isJS="true"
         />
       </template>
     </ExampleWrapper>

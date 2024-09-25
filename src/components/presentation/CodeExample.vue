@@ -2,6 +2,9 @@
 import { ref, computed } from 'vue'
 import CodeWrapper from '@/components/presentation/CodeWrapper.vue'
 
+// CodeExample componet requires you have a pair of `code` and `is`
+// <CodeExample :codeHTML="checkboxV1_small" :isHTML="true" />
+
 const props = defineProps({
   codeHTML: String,
   codeCSS: String,
