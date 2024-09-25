@@ -82,8 +82,17 @@ const checkboxV1_large = ref(
 <template>
   <section>
     <div class="mb-12">
-      By default, the buttons have three sizes as Small, Medium, Large and one with icon. You can
-      add the icon to the rest of the sizes as show in the examples.
+      <p>
+        By default, the buttons have three sizes as Small, Medium, Large and one with icon. You can
+        add the icon to the rest of the sizes as show in the examples.
+      </p>
+
+      <p class="mt-4 bg-indigo-50">
+        All Form elements require
+        <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
+          >@tailwindcss/forms plugin</a
+        >.
+      </p>
     </div>
     <!-- Small -->
     <PageHeader3 sectionTitle="Small" />
