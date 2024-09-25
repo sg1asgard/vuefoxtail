@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import PageHeader3 from '@/components/presentation/PageHeader3.vue'
 import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
 import CodeExample from '@/components/presentation/CodeExample.vue'
+import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 
 // Checkbox v1
 const checkboxV1_small = ref(
@@ -87,12 +88,14 @@ const checkboxV1_large = ref(
         add the icon to the rest of the sizes as show in the examples.
       </p>
 
-      <p class="mt-4 bg-indigo-50">
-        All Form elements require
-        <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
-          >@tailwindcss/forms plugin</a
-        >.
-      </p>
+      <div class="mt-4">
+        <AlertWrapper info>
+          All Form elements require
+          <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
+            >@tailwindcss/forms plugin</a
+          >.
+        </AlertWrapper>
+      </div>
     </div>
     <!-- Small -->
     <PageHeader3 sectionTitle="Small" />
