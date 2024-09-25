@@ -48,12 +48,23 @@ const inputV1_large = ref(
     <PageHeader3 sectionTitle="Small" />
     <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
-        <div class="items-center px-6 py-4 space-y-2">
-          <input
-            class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 active:shadow-lg"
-            type="text"
-            placeholder="input"
-          />
+        <div
+          class="flex w-100 flex-col md:flex-row items-center px-6 py-4 md:space-x-6 space-y-2 md:space-y-0"
+        >
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 active:shadow-lg"
+              type="text"
+              placeholder="input"
+            />
+          </div>
+          <div class="w-full flex-1">
+            <input
+              class="w-full bg-white border-2 border-slate-300 rounded-md px-3 py-2 text-sm transition-all ease-in-out duration-150 active:shadow-lg"
+              type="text"
+              placeholder="input"
+            />
+          </div>
         </div>
       </template>
 
