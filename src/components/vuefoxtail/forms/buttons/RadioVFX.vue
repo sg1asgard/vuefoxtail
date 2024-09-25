@@ -8,20 +8,20 @@ import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 // Checkbox v1
 const radioV1_common_csssmall = ref(
   `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="radioDefaultSmall" />
-  <label class="text-sm" for="radioDefaultSmall">Default</label>
+  <input type="radio" value="" name="radioDefaultSmall" id="radioDefaultSmall_1" />
+  <label class="text-sm" for="radioDefaultSmall_1">Default</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedSmall" checked /> 
-  <label class="text-sm" for="checkCheckedSmall">Checked</label>
+  <input type="radio" value="" name="radioDefaultSmall" id="radioSelectedSmall_1" checked />
+  <label class="text-sm" for="radioSelectedSmall_1">Selected</label>
+</div>
+<div class="flex flex-row items-center space-x-2"> 
+  <input type="radio" value="" name="radioDefaultSmall_2" id="radioDefaultDisabledSmall_1" disabled />
+  <label class="text-sm" for="radioDefaultDisabledSmall_1">Default</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="radioDefaultDisabledSmall" disabled />
-  <label class="text-sm" for="radioDefaultDisabledSmall">Default</label>
-</div>
-<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedDisabledSmall" checked disabled />
-  <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
+  <input type="radio" value="" name="radioDefaultSmall_2" id="radioSelectedDisabledSmall_2" checked disabled />
+  <label class="text-sm" for="radioSelectedDisabledSmall_2">Selected</label>
 </div>`
 )
 
@@ -36,42 +36,41 @@ input[type='radio']:disabled {
 
 const radioV1_common_cssmedium = ref(
   `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="radioDefaultMedium" />
-  <label class="text-md" for="radioDefaultMedium">Default</label>
+  <input class="p-2" type="radio" value="" name="radioDefaultMedium" id="radioDefaultMedium_1" />
+  <label class="text-md" for="radioDefaultMedium_1">Default</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkCheckedMedium" checked />
-  <label class="text-md" for="checkCheckedMedium">Checked</label>
+  <input class="p-2" type="radio" value="" name="radioDefaultMedium" id="radioSelectedMedium_1" checked />
+  <label class="text-md" for="radioSelectedMedium_1">Selected</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="radioDefaultDisabledMedium" disabled />
-  <label class="text-md text-slate-600" for="radioDefaultDisabledMedium">Default Disabled</label>
+  <input class="p-2" type="radio" value="" name="radioDefaultMedium_2" id="radioDefaultDisabledMedium_1" disabled />
+  <label class="text-md text-slate-600" for="radioDefaultDisabledMedium_1">Default Disabled</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkCheckedDisabledMedium" checked disabled />
-  <label class="text-md text-slate-600" for="checkCheckedDisabledMedium">Default Disabled</label>
+  <input class="p-2" type="radio" value="" name="radioDefaultMedium_2" id="radioSelectedDisabledMedium_2" checked disabled />
+  <label class="text-md text-slate-600" for="radioSelectedDisabledMedium_2">Checked Disabled</label>
 </div>
 `
 )
 
 const radioV1_common_csslarge = ref(
   `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="radioDefaultLarge" />
-  <label class="text-xl" for="radioDefaultLarge">Default</label>
+  <input class="p-2.5" type="radio" value="" name="radioDefaultLarge" id="radioDefaultLarge_1" />
+  <label class="text-xl" for="radioDefaultLarge_1">Default</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkCheckedLarge" checked />
-  <label class="text-xl" for="checkCheckedLarge">Checked</label>
+  <input class="p-2.5" type="radio" value="" name="radioDefaultLarge" id="radioDefaultLarge_2" checked />
+  <label class="text-xl" for="radioDefaultLarge_2">Selected</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2.5"type="checkbox" value="" id="radioDefaultDisabledLarge" disabled />
-  <label class="text-xl text-slate-600" for="radioDefaultDisabledLarge">Default Disabled</label>
+  <input class="p-2.5" type="radio" value="" name="radioDefaultLarge_2" id="radioDefaultDisabledLarge_2" disabled />
+  <label class="text-xl text-slate-600" for="radioDefaultDisabledLarge_2">Default Disabled</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2.5"type="checkbox" value="" id="checkCheckedDisabledLarge" checked disabled />
-  <label class="text-xl text-slate-600" for="checkCheckedDisabledLarge">Default Disabled</label>
-</div>
-`
+  <input class="p-2.5" type="radio" value="" name="radioDefaultLarge_2" id="checkCheckedDisabledLarge_2" checked disabled />
+  <label class="text-xl text-slate-600" for="checkCheckedDisabledLarge_2">Selected Disabled</label>
+</div>`
 )
 </script>
 
