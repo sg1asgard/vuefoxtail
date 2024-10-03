@@ -8,9 +8,8 @@ import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 const inputV1_common_css = ref(
   `// add this once in your main.css
 
-input[type="text"]:disabled,
-input[type="password"]:disabled {
-  background-color: var(--vfox-c-text-disabled);
+textarea:disabled {
+  background-color: var(--color-background-disabled-200);
 }`
 )
 
