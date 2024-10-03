@@ -2,7 +2,6 @@
 import { ref } from 'vue'
 import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
 import CodeExample from '@/components/presentation/CodeExample.vue'
-import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 
 // Select v1
 const inputV1_default = ref(
@@ -21,12 +20,6 @@ const inputV1_default = ref(
       <td class="p-2">Orange</td>
       <td class="p-2">1kg</td>
       <td class="p-2">1.89/kg</td>
-    </tr>
-    <tr class="border-b-[1px] hover:bg-slate-100">
-      <th scope="row">2</th>
-      <td class="p-2">Lemon</td>
-      <td class="p-2">3kg</td>
-      <td class="p-2">2.42/kg</td>
     </tr>
     <tr class="hover:bg-slate-100">
       <th scope="row">3</th>
