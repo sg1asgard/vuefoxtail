@@ -15,7 +15,10 @@ const buttonsV1_fill = ref(
 <button class="inline-flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
   <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
-</button>`
+</button>
+
+// disabled
+<button class="bg-slate-400 text-white rounded-md px-5 py-2.5 text-xl inline-block" disabled>Disabled</button>`
 )
 
 const buttonsV1_gradient = ref(
@@ -27,7 +30,10 @@ const buttonsV1_gradient = ref(
 <button class="inline-flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
   <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
-</button>`
+</button>
+
+// disabled
+<button class="bg-gradient-to-t from-slate-500 to-slate-400 text-white rounded-md px-5 py-2.5 text-xl" disabled> Disabled</button>`
 )
 
 // Button v2
@@ -40,7 +46,10 @@ const btnSmallV2_fill = ref(
 <button class="inline-flex flex-row items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
   <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
-</button>`
+</button>
+
+// disabled
+<button class="bg-slate-400 text-white rounded-full px-6 py-3 text-xl" disabled>Button</button>`
 )
 
 const btnSmallV2_gradient = ref(
@@ -52,7 +61,10 @@ const btnSmallV2_gradient = ref(
 <button class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-indigo-500 to-indigo-400 hover:from-indigo-600 hover:to-indigo-500 text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
   <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
-</button>`
+</button>
+
+// disabled
+<button class="bg-gradient-to-t from-slate-500 to-slate-400 text-white rounded-full px-6 py-3 text-xl" disabled>Button</button>`
 )
 
 // Button v3
@@ -65,7 +77,10 @@ const btnSmallV3_fill = ref(
 <button class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
   <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
-</button>`
+</button>
+
+// disabled
+<button class="bg-slate-100 border-2 border-slate-300 text-slate-500 rounded-md px-5 py-3 text-xl" disabled>Large Button</button>`
 )
 
 const btnSmallV3_gradient = ref(
@@ -77,7 +92,10 @@ const btnSmallV3_gradient = ref(
 <button class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-md px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
   <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
-</button>`
+</button>
+
+// disabled
+<button class="bg-gradient-to-t from-slate-200 to-slate-100 border-2 border-slate-300 text-slate-500 rounded-md px-5 py-3 text-xl" disabled>Large Button</button>`
 )
 
 // Button v4
@@ -90,7 +108,11 @@ const btnSmallV4_fill = ref(
 <button class="inline-flex flex-row items-center space-x-2 bg-white hover:bg-indigo-500 border-2 border-indigo-500 hover:text-white rounded-full px-6 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
   <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
-</button>`
+</button>
+
+// disabled
+<button class="bg-slate-200 border-2 border-slate-300 text-slate-500 rounded-md px-5 py-3 text-xl" disabled>Large Button</button>
+`
 )
 
 const btnSmallV4_gradient = ref(
@@ -102,7 +124,12 @@ const btnSmallV4_gradient = ref(
 <button class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-slate-200 to-white hover:from-indigo-500 hover:to-indigo-500/75 border-2 border-indigo-500 hover:text-white rounded-full px-5 py-3 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150">
   <span class="grow">With Icon</span>
   <span class="icon-[ph--heart-light]"></span>
-</button>`
+</button>
+
+// disabled
+<button class="bg-gradient-to-t from-slate-200 to-slate-100 border-2 border-slate-300 text-slate-500 rounded-full px-5 py-3 text-xl" disabled>
+              Large Button
+            </button>`
 )
 </script>
 
@@ -153,6 +180,15 @@ const btnSmallV4_gradient = ref(
               <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="bg-slate-400 text-white rounded-md px-5 py-2.5 text-xl inline-block"
+              disabled
+            >
+              Disabled
+            </button>
+          </div>
         </div>
       </template>
 
@@ -192,10 +228,10 @@ const btnSmallV4_gradient = ref(
 
           <div class="inline-flex me-2">
             <button
-              class="inline-flex flex-row items-center space-x-2 bg-gradient-to-t from-indigo-500 to-indigo-400 hover:from-indigo-600 hover:to-indigo-500 text-white rounded-md px-5 py-2.5 text-xl hover:shadow-lg hover:shadow-black/25 transition-all ease-in-out duration-150"
+              class="bg-gradient-to-t from-slate-500 to-slate-400 text-white rounded-md px-5 py-2.5 text-xl"
+              disabled
             >
-              <span class="grow">With Icon</span>
-              <span class="icon-[ph--heart-light]"></span>
+              Disabled
             </button>
           </div>
         </div>
@@ -246,6 +282,12 @@ const btnSmallV4_gradient = ref(
               <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
+
+          <div class="inline-flex me-2">
+            <button class="bg-slate-400 text-white rounded-full px-6 py-3 text-xl" disabled>
+              Button
+            </button>
+          </div>
         </div>
       </template>
 
@@ -288,6 +330,15 @@ const btnSmallV4_gradient = ref(
             >
               <span class="grow">With Icon</span>
               <span class="icon-[ph--heart-light]"></span>
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="bg-gradient-to-t from-slate-500 to-slate-400 text-white rounded-full px-6 py-3 text-xl"
+              disabled
+            >
+              Button
             </button>
           </div>
         </div>
@@ -338,6 +389,15 @@ const btnSmallV4_gradient = ref(
               <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="bg-slate-100 border-2 border-slate-300 text-slate-500 rounded-md px-5 py-3 text-xl"
+              disabled
+            >
+              Large Button
+            </button>
+          </div>
         </div>
       </template>
 
@@ -380,6 +440,15 @@ const btnSmallV4_gradient = ref(
             >
               <span class="grow">With Icon</span>
               <span class="icon-[ph--heart-light]"></span>
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="bg-gradient-to-t from-slate-200 to-slate-100 border-2 border-slate-300 text-slate-500 rounded-md px-5 py-3 text-xl"
+              disabled
+            >
+              Large Button
             </button>
           </div>
         </div>
@@ -430,6 +499,15 @@ const btnSmallV4_gradient = ref(
               <span class="icon-[ph--heart-light]"></span>
             </button>
           </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="bg-slate-100 border-2 border-slate-300 text-slate-500 rounded-full px-5 py-3 text-xl"
+              disabled
+            >
+              Large Button
+            </button>
+          </div>
         </div>
       </template>
 
@@ -472,6 +550,15 @@ const btnSmallV4_gradient = ref(
             >
               <span class="grow">With Icon</span>
               <span class="icon-[ph--heart-light]"></span>
+            </button>
+          </div>
+
+          <div class="inline-flex me-2">
+            <button
+              class="bg-gradient-to-t from-slate-200 to-slate-100 border-2 border-slate-300 text-slate-500 rounded-full px-5 py-3 text-xl"
+              disabled
+            >
+              Large Button
             </button>
           </div>
         </div>

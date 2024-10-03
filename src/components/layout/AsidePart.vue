@@ -27,6 +27,15 @@ import LinkPart from './aside/LinkPart.vue'
             <RouterLink :to="{ name: 'form_radio' }"><LinkPart>Radio</LinkPart></RouterLink>
             <RouterLink :to="{ name: 'form_select' }"><LinkPart>Select</LinkPart></RouterLink>
             <RouterLink :to="{ name: 'form_input' }"><LinkPart>Input</LinkPart></RouterLink>
+            <RouterLink :to="{ name: 'form_range' }"><LinkPart>Range</LinkPart></RouterLink>
+            <RouterLink :to="{ name: 'form_textarea' }"><LinkPart>Textarea</LinkPart></RouterLink>
+          </section>
+        </li>
+
+        <li class="mt-12 lg:mt-8">
+          <section class="flex flex-col">
+            <HeaderPart>Components</HeaderPart>
+            <RouterLink :to="{ name: 'tables' }"><LinkPart>Table</LinkPart></RouterLink>
           </section>
         </li>
       </ul>
