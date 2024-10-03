@@ -1,0 +1,10 @@
+body.foxtail {
+  .main-content {
+    a {
+      @apply underline;
+      &:hover {
+        @apply bg-indigo-50 text-indigo-500;
+      }
+    }
+  }
+}

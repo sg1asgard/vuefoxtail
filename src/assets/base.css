@@ -2,6 +2,8 @@
 :root {
   --vfox-c-white: #ffffff;
   --vfox-c-black: #181818;
+  --vfox-c-slate-200: #e2e8f0;
+  --vfox-c-slate-300: #cbd5e1;
   --vfox-c-slate-400: #94a3b8;
 
   --vfox-c-divider-light-1: rgba(60, 60, 60, 0.29);
@@ -20,6 +22,8 @@
   --color-background: var(--vfox-c-white);
   --color-background-soft: var(--vfox-c-white-soft);
   --color-background-mute: var(--vfox-c-white-mute);
+  --color-background-disabled-200: var(--vfox-c-slate-200);
+  --color-background-disabled-300: var(--vfox-c-slate-300);
 
   --color-border: var(--vfox-c-divider-light-2);
   --color-border-hover: var(--vfox-c-divider-light-1);

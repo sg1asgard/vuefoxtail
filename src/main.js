@@ -9,6 +9,7 @@ import hljsVuePlugin from '@highlightjs/vue-plugin'
 import App from './App.vue'
 import router from './router'
 
+// create app
 const app = createApp(App)
 
 // declare global variables
@@ -26,6 +27,7 @@ app.config.globalProperties.discord = reactive({
   name: 'Discord'
 })
 
+// app.use
 app.use(createPinia())
 app.use(router)
 app.use(hljsVuePlugin)

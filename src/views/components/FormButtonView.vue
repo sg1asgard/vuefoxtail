@@ -1,7 +1,7 @@
 <script setup>
 import MainPart from '@/components/layout/MainPart.vue'
 import PageHeader from '@/components/presentation/PageHeader.vue'
-import ButtonVFX from '@/components/vuefoxtail/forms/buttons/ButtonVFX.vue'
+import ButtonVFX from '@/components/vuefoxtail/forms/ButtonVFX.vue'
 import MainLayout from '@/layouts/MainLayout.vue'
 </script>
 
