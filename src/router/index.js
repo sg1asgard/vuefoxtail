@@ -86,7 +86,7 @@ const router = createRouter({
         {
           path: 'tables',
           name: 'tables',
-          component: () => import('@/views/components/FormButtonView.vue')
+          component: () => import('@/views/components/BasicTableView.vue')
         }
       ]
     }
