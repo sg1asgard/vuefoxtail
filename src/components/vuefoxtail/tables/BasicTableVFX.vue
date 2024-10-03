@@ -41,9 +41,9 @@ const inputV1_default = ref(
 
 <template>
   <section>
-    <div class="mb-12">
-      <AlertWrapper variant="info"> <strong>Select</strong> ... </AlertWrapper>
-    </div>
+    <!-- <div class="mb-12">
+      <p>Basic Table is full width</p>
+    </div> -->
 
     <!-- Default -->
     <ExampleWrapper isHtml isCss isJs>
