@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { scrollToTop } from '@/utilities/utils'
+import { scrollToTop } from '@/utils/utils'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
