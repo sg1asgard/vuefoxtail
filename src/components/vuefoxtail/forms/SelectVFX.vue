@@ -14,7 +14,7 @@ select:disabled {
 )
 
 const selectV1_default = ref(
-  `<div class="items-center px-6 py-4">
+  `<div class="items-center px-6 py-4 space-y-2">
   <label for="customSelectDefault" class="flex">Label</label>
   <select id="customSelectDefault" class="w-full bg-white border-2 border-slate-300 rounded-md px-4 p-2.5 transition-all ease-in-out duration-150 active:shadow-lg">
     <option selected>Open this select menu</option>
