@@ -15,7 +15,7 @@ input[type="range"]:disabled {
 
 const inputV1_default = ref(
   `<div class="w-full flex-1">
-  <label for="customRange1" class="form-label">Example range</label>
+  <label for="customRange1">Example range</label>
   <input id="customRange1" class="w-full bg-white border-2 border-slate-300 rounded-md" type="range" min="0" max="10" value="5" />
 </div>`
 )
@@ -37,7 +37,7 @@ const inputV1_default = ref(
       <template v-slot:code-items>
         <div class="flex flex-col space-y-3 items-center px-6 py-4">
           <div class="w-full flex-1">
-            <label for="customRange1" class="form-label">Example range</label>
+            <label for="customRange1">Example range</label>
             <input
               id="customRange1"
               class="w-full bg-white border-2 border-slate-300 rounded-md"
