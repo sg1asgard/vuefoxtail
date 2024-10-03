@@ -38,43 +38,55 @@ const router = createRouter({
     },
     {
       // Components
-      path: '/docs/components',
+      path: '/docs/forms',
       // notice how only the child route has a name
       children: [
         {
-          path: 'forms/button',
+          path: 'button',
           name: 'form_button',
           component: () => import('@/views/components/FormButtonView.vue')
         },
         {
-          path: 'forms/checkbox',
+          path: 'checkbox',
           name: 'form_checkbox',
           component: () => import('@/views/components/FormCheckBoxView.vue')
         },
         {
-          path: 'forms/radio',
+          path: 'radio',
           name: 'form_radio',
           component: () => import('@/views/components/FormRadioView.vue')
         },
         {
-          path: 'forms/select',
+          path: 'select',
           name: 'form_select',
           component: () => import('@/views/components/FormSelectView.vue')
         },
         {
-          path: 'forms/input',
+          path: 'input',
           name: 'form_input',
           component: () => import('@/views/components/FormInputView.vue')
         },
         {
-          path: 'forms/range',
+          path: 'range',
           name: 'form_range',
           component: () => import('@/views/components/FormRangeView.vue')
         },
         {
-          path: 'forms/textarea',
+          path: 'textarea',
           name: 'form_textarea',
           component: () => import('@/views/components/FormTextareaView.vue')
+        }
+      ]
+    },
+    {
+      // Components
+      path: '/docs/components',
+      // notice how only the child route has a name
+      children: [
+        {
+          path: 'tables',
+          name: 'tables',
+          component: () => import('@/views/components/FormButtonView.vue')
         }
       ]
     }
