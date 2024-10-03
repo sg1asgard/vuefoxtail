@@ -25,13 +25,15 @@ const currentYear = ref(new Date())
         <div class="flex flex-row space-x-4">
           <a
             :href="discord.url"
+            target="_blank"
             class="inline-flex space-x-2 items-center px-3 py-1.5 rounded-lg border-[1px] border-slate-300 hover:border-indigo-500 hover:bg-indigo-500 hover:text-white transition-all duration-150 ease-in-out"
             ><span>{{ discord.name }}</span
             ><span class="icon-[ph--discord-logo-fill] size-6"></span
           ></a>
 
           <a
-            :href="discord.url"
+            :href="telegram.url"
+            target="_blank"
             class="inline-flex space-x-2 items-center px-3 py-1.5 rounded-lg border-[1px] border-slate-300 hover:border-indigo-500 hover:bg-indigo-500 hover:text-white transition-all duration-150 ease-in-out"
             ><span>{{ telegram.name }}</span
             ><span class="icon-[ph--telegram-logo-fill] size-6"></span
