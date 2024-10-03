@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import PageHeader3 from '@/components/presentation/PageHeader3.vue'
 import ExampleWrapper from '@/components/presentation/ExampleWrapper.vue'
 import CodeExample from '@/components/presentation/CodeExample.vue'
 import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
@@ -26,16 +25,12 @@ const inputV1_default = ref(
 <template>
   <section>
     <div class="mb-12">
-      <p>...</p>
-
-      <div class="mt-4">
-        <AlertWrapper variant="info">
-          <strong>Select</strong> form element require
-          <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
-            >@tailwindcss/forms plugin</a
-          >.
-        </AlertWrapper>
-      </div>
+      <AlertWrapper variant="info">
+        <strong>Select</strong> form element require
+        <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
+          >@tailwindcss/forms plugin</a
+        >.
+      </AlertWrapper>
     </div>
 
     <!-- Default -->
