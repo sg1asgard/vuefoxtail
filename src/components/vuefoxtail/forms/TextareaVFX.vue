@@ -18,21 +18,6 @@ const inputV1_default = ref(
   `<div class="w-full flex-1">
   <label for="inputDefault" class="mb-2 flex">Label</label>
   <input id="inputDefault" class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg" type="text" placeholder="default"/>
-</div>
-
-<div class="w-full flex-1">
-  <label for="inputDefaultDisabled" class="mb-2 flex">Label</label>
-  <input id="inputDefaultDisabled" class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg" type="text" placeholder="disabled" disabled />
-</div>
-
-<div class="w-full flex-1"> 
-  <label for="inputDefaultRounded" class="mb-2 flex">Label</label>
-  <input id="inputDefaultRounded" class="w-full bg-white border-2 border-slate-300 rounded-full px-5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg" type="text" placeholder="default" />
-</div>
-
-<div class="w-full flex-1">
-  <label for="inputDefaultRoundedDisabled" class="mb-2 flex">Label</label>
-  <input id="inputDefaultRoundedDisabled" class="w-full bg-white border-2 border-slate-300 rounded-full px-5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg" type="text" placeholder="disabled" disabled />
 </div>`
 )
 </script>
@@ -53,42 +38,12 @@ const inputV1_default = ref(
       <template v-slot:code-items>
         <div class="flex flex-col space-y-6 items-center px-6 py-4">
           <div class="w-full flex-1">
-            <label for="inputDefault" class="mb-2 flex">Label</label>
-            <input
-              id="inputDefault"
+            <label for="textareaDefault" class="mb-2 flex">Label</label>
+            <textarea
+              id="textareaDefault"
               class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
-              type="text"
-              placeholder="default"
-            />
-          </div>
-          <div class="w-full flex-1">
-            <label for="inputDefaultDisabled" class="mb-2 flex">Label</label>
-            <input
-              id="inputDefaultDisabled"
-              class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
-              type="text"
-              placeholder="disabled"
-              disabled
-            />
-          </div>
-          <div class="w-full flex-1">
-            <label for="inputDefaultRounded" class="mb-2 flex">Label</label>
-            <input
-              id="inputDefaultRounded"
-              class="w-full bg-white border-2 border-slate-300 rounded-full px-5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
-              type="text"
-              placeholder="default"
-            />
-          </div>
-          <div class="w-full flex-1">
-            <label for="inputDefaultRoundedDisabled" class="mb-2 flex">Label</label>
-            <input
-              id="inputDefaultRoundedDisabled"
-              class="w-full bg-white border-2 border-slate-300 rounded-full px-5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
-              type="text"
-              placeholder="disabled"
-              disabled
-            />
+              rows="5"
+            ></textarea>
           </div>
         </div>
       </template>
@@ -106,7 +61,7 @@ const inputV1_default = ref(
 </template>
 
 <style lang="css" scoped>
-input[type='text']:disabled {
+textarea:disabled {
   background-color: var(--color-background-disabled-200);
 }
 </style>
