@@ -38,6 +38,7 @@ const checkboxV1_default = ref(
 
 <template>
   <section>
+    <PageHeader3 sectionTitle="When to use" />
     <div class="mb-12">
       <p>
         A checkbox form control is best used when you need the user to select multiple options. For

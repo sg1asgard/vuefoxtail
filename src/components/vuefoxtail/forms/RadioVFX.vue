@@ -38,6 +38,7 @@ const radioV1_default = ref(
 
 <template>
   <section>
+    <PageHeader3 sectionTitle="When to use" />
     <div class="mb-12">
       <p>
         A radio button form control is best used when you need the user to select only one option
