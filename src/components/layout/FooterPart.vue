@@ -11,7 +11,7 @@ const currentYear = ref(new Date())
     <div class="flex flex-col items-center">
       <div>
         Released under the
-        <a class="vt-link link link" :href="license.url" target="_blank" rel="noopener noreferrer"
+        <a class="underline" :href="license.url" target="_blank" rel="noopener noreferrer"
           >{{ license.name }} License</a
         >.
       </div>
