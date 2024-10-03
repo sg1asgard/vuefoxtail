@@ -1,8 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import cachyosLogo from '@/assets/logos/cachyos.svg'
-import fedoraLogo from '@/assets/logos/fedora.svg'
-import vueLogo from '@/assets/logos/vue.svg'
 
 const currentYear = ref(new Date())
 </script>
