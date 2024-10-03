@@ -5,19 +5,37 @@ import CodeExample from '@/components/presentation/CodeExample.vue'
 import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 
 // Select v1
-const inputV1_common_css = ref(
-  `// add this once in your main.css
-
-textarea:disabled {
-  background-color: var(--color-background-disabled-200);
-}`
-)
-
 const inputV1_default = ref(
-  `<div class="w-full flex-1">
-  <label for="inputDefault" class="mb-2 flex">Label</label>
-  <input id="inputDefault" class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg" type="text" placeholder="default"/>
-</div>`
+  `<table class="table-auto w-full">
+  <thead class="bg-slate-200 text-slate-700">
+    <tr> 
+      <th scope="col" class="p-2 font-bold">#</th>
+      <th scope="col" class="p-2 text-start font-bold">Fruits</th>
+      <th scope="col" class="p-2 text-start font-bold">Quantity</th>
+      <th scope="col" class="p-2 text-start font-bold">Price</th>
+    </tr> 
+  </thead>
+  <tbody class="text-slate-700">
+    <tr class="border-b-[1px] hover:bg-slate-100">
+      <th scope="row">1</th>
+      <td class="p-2">Orange</td>
+      <td class="p-2">1kg</td>
+      <td class="p-2">1.89/kg</td>
+    </tr>
+    <tr class="border-b-[1px] hover:bg-slate-100">
+      <th scope="row">2</th>
+      <td class="p-2">Lemon</td>
+      <td class="p-2">3kg</td>
+      <td class="p-2">2.42/kg</td>
+    </tr>
+    <tr class="hover:bg-slate-100">
+      <th scope="row">3</th>
+      <td class="p-2">Pineapple</td>
+      <td class="p-2">1.60kg</td>
+      <td class="p-2">3.14/kg</td>
+    </tr>
+  </tbody>
+</table>`
 )
 </script>
 
@@ -67,12 +85,7 @@ const inputV1_default = ref(
       </template>
 
       <template v-slot:code-example>
-        <CodeExample
-          :codeHTML="inputV1_default"
-          :codeCSS="inputV1_common_css"
-          :isHTML="true"
-          :isCSS="true"
-        />
+        <CodeExample :codeHTML="inputV1_default" :isHTML="true" />
       </template>
     </ExampleWrapper>
   </section>
