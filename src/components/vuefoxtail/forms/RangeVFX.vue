@@ -15,10 +15,10 @@ input[type="password"]:disabled {
 )
 
 const inputV1_default = ref(
-  `<input class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 active:shadow-lg" type="text" placeholder="default" />
-<input class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 active:shadow-lg" type="text" placeholder="disabled" disabled />
-<input class="w-full bg-white border-2 border-slate-300 rounded-full px-5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg" type="text" placeholder="default" />
-<input class="w-full bg-white border-2 border-slate-300 rounded-full px-5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg" type="text" placeholder="disabled" disabled />`
+  `<div class="w-full flex-1">
+  <label for="customRange1" class="form-label">Example range</label>
+  <input id="customRange1" class="w-full bg-white border-2 border-slate-300 rounded-md" type="range" min="0" max="10" value="5" />
+</div>`
 )
 </script>
 
@@ -38,10 +38,14 @@ const inputV1_default = ref(
       <template v-slot:code-items>
         <div class="flex flex-col space-y-3 items-center px-6 py-4">
           <div class="w-full flex-1">
+            <label for="customRange1" class="form-label">Example range</label>
             <input
-              class="w-full bg-white border-2 border-slate-300 rounded-md px-3.5 py-2.5 transition-all ease-in-out duration-150 focus:shadow-lg"
+              id="customRange1"
+              class="w-full bg-white border-2 border-slate-300 rounded-md"
               type="range"
-              placeholder="default"
+              min="0"
+              max="10"
+              value="5"
             />
           </div>
         </div>
