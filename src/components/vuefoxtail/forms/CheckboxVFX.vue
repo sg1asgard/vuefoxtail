@@ -38,29 +38,13 @@ const checkboxV1_default = ref(
 
 <template>
   <section>
-    <PageHeader3 sectionTitle="When to use" />
     <div class="mb-12">
-      <p>
-        A checkbox form control is best used when you need the user to select multiple options. For
-        example, you may have a grocery list you need to complete:
-      </p>
-
-      <ul class="ms-5 mt-2 list-inside list-disc">
-        <li>Oranges</li>
-        <li>Lemons</li>
-        <li>Olive oil</li>
-      </ul>
-
-      <p class="mt-4">In this case you would use checkboxes.</p>
-
-      <div class="mt-8">
-        <AlertWrapper variant="info">
-          <strong>Checkbox</strong> form element require
-          <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
-            >@tailwindcss/forms plugin</a
-          >.
-        </AlertWrapper>
-      </div>
+      <AlertWrapper variant="info">
+        <strong>Checkbox</strong> form element require
+        <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
+          >@tailwindcss/forms plugin</a
+        >.
+      </AlertWrapper>
     </div>
 
     <!-- Default -->

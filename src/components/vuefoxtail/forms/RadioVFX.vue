@@ -38,29 +38,13 @@ const radioV1_default = ref(
 
 <template>
   <section>
-    <PageHeader3 sectionTitle="When to use" />
     <div class="mb-12">
-      <p>
-        A radio button form control is best used when you need the user to select only one option
-        out of a number of options. For example, you may need to choose a color for a new car:
-      </p>
-
-      <ul class="ms-5 mt-2 list-inside list-disc">
-        <li>Beige</li>
-        <li>Black</li>
-        <li>Dark Silver</li>
-      </ul>
-
-      <p class="mt-4">In this case you would use radio button.</p>
-
-      <div class="mt-8">
-        <AlertWrapper variant="info">
-          <strong>Checkbox</strong> form element require
-          <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
-            >@tailwindcss/forms plugin</a
-          >.
-        </AlertWrapper>
-      </div>
+      <AlertWrapper variant="info">
+        <strong>Checkbox</strong> form element require
+        <a href="https://github.com/tailwindlabs/tailwindcss-forms" target="_blank"
+          >@tailwindcss/forms plugin</a
+        >.
+      </AlertWrapper>
     </div>
 
     <ExampleWrapper>
