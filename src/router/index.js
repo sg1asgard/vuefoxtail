@@ -69,6 +69,11 @@ const router = createRouter({
           path: 'forms/range',
           name: 'form_range',
           component: () => import('@/views/components/FormRangeView.vue')
+        },
+        {
+          path: 'forms/textarea',
+          name: 'form_textarea',
+          component: () => import('@/views/components/FormTextareaView.vue')
         }
       ]
     }

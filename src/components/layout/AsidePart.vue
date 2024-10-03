@@ -28,6 +28,7 @@ import LinkPart from './aside/LinkPart.vue'
             <RouterLink :to="{ name: 'form_select' }"><LinkPart>Select</LinkPart></RouterLink>
             <RouterLink :to="{ name: 'form_input' }"><LinkPart>Input</LinkPart></RouterLink>
             <RouterLink :to="{ name: 'form_range' }"><LinkPart>Range</LinkPart></RouterLink>
+            <RouterLink :to="{ name: 'form_textarea' }"><LinkPart>Textarea</LinkPart></RouterLink>
           </section>
         </li>
       </ul>
