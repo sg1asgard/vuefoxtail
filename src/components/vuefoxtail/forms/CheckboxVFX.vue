@@ -6,25 +6,6 @@ import CodeExample from '@/components/presentation/CodeExample.vue'
 import AlertWrapper from '@/components/presentation/alerts/AlertWrapper.vue'
 
 // Checkbox v1
-const checkboxV1_small = ref(
-  `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultSmall" />
-  <label class="text-sm" for="checkDefaultSmall">Default</label>
-</div>
-<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedSmall" checked /> 
-  <label class="text-sm" for="checkCheckedSmall">Checked</label>
-</div>
-<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultDisabledSmall" disabled />
-  <label class="text-sm" for="checkDefaultDisabledSmall">Default</label>
-</div>
-<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px]" type="checkbox" value="" id="checkCheckedDisabledSmall" checked disabled />
-  <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
-</div>`
-)
-
 const checkboxV1_common_css = ref(
   `// add this once in your main.css
 
@@ -34,42 +15,22 @@ input[type='checkbox']:disabled {
 `
 )
 
-const checkboxV1_medium = ref(
+const checkboxV1_default = ref(
   `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultMedium" />
-  <label class="text-md" for="checkDefaultMedium">Default</label>
+  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultDefault" />
+  <label class="text-md" for="checkDefaultDefaultv">Default</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkCheckedMedium" checked />
-  <label class="text-md" for="checkCheckedMedium">Checked</label>
+  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkCheckedDefault" checked />
+  <label class="text-md" for="checkCheckedDefault">Checked</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultDisabledMedium" disabled />
-  <label class="text-md text-slate-600" for="checkDefaultDisabledMedium">Default Disabled</label>
+  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultDisabledDefault" disabled />
+  <label class="text-md text-slate-600" for="checkDefaultDisabledDefault">Default Disabled</label>
 </div>
 <div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkCheckedDisabledMedium" checked disabled />
-  <label class="text-md text-slate-600" for="checkCheckedDisabledMedium">Default Disabled</label>
-</div>
-`
-)
-
-const checkboxV1_large = ref(
-  `<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkDefaultLarge" />
-  <label class="text-xl" for="checkDefaultLarge">Default</label>
-</div>
-<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkCheckedLarge" checked />
-  <label class="text-xl" for="checkCheckedLarge">Checked</label>
-</div>
-<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2.5"type="checkbox" value="" id="checkDefaultDisabledLarge" disabled />
-  <label class="text-xl text-slate-600" for="checkDefaultDisabledLarge">Default Disabled</label>
-</div>
-<div class="flex flex-row items-center space-x-2">
-  <input class="rounded-[4px] p-2.5"type="checkbox" value="" id="checkCheckedDisabledLarge" checked disabled />
-  <label class="text-xl text-slate-600" for="checkCheckedDisabledLarge">Default Disabled</label>
+  <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkCheckedDisabledDefault" checked disabled />
+  <label class="text-md text-slate-600" for="checkCheckedDisabledDefault">Default Disabled</label>
 </div>
 `
 )
@@ -78,10 +39,7 @@ const checkboxV1_large = ref(
 <template>
   <section>
     <div class="mb-12">
-      <p>
-        By default, the buttons have three sizes as Small, Medium, Large and one with icon. You can
-        add the icon to the rest of the sizes as show in the examples.
-      </p>
+      <p>...</p>
 
       <div class="mt-4">
         <AlertWrapper variant="info">
@@ -92,78 +50,15 @@ const checkboxV1_large = ref(
         </AlertWrapper>
       </div>
     </div>
-    <!-- Small -->
-    <PageHeader3 sectionTitle="Small" />
-    <ExampleWrapper isHtml isCss isJs>
-      <template v-slot:code-items>
-        <div class="items-center px-6 py-4 space-y-2">
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input class="rounded-[4px]" type="checkbox" value="" id="checkDefaultSmall" />
-              <label class="text-sm" for="checkDefaultSmall">Default</label>
-            </div>
-          </div>
 
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input
-                class="rounded-[4px]"
-                type="checkbox"
-                value=""
-                id="checkCheckedSmall"
-                checked
-              />
-              <label class="text-sm" for="checkCheckedSmall">Checked</label>
-            </div>
-          </div>
-
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input
-                class="rounded-[4px]"
-                type="checkbox"
-                value=""
-                id="checkDefaultDisabledSmall"
-                disabled
-              />
-              <label class="text-sm" for="checkDefaultDisabledSmall">Default</label>
-            </div>
-          </div>
-
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input
-                class="rounded-[4px]"
-                type="checkbox"
-                value=""
-                id="checkCheckedDisabledSmall"
-                checked
-                disabled
-              />
-              <label class="text-sm" for="checkCheckedDisabledSmall">Checked</label>
-            </div>
-          </div>
-        </div>
-      </template>
-
-      <template v-slot:code-example>
-        <CodeExample
-          :codeHTML="checkboxV1_small"
-          :codeCSS="checkboxV1_common_css"
-          :isHTML="true"
-          :isCSS="true"
-        />
-      </template>
-    </ExampleWrapper>
-
-    <PageHeader3 sectionTitle="Medium" class="mt-8" />
+    <!-- Default -->
     <ExampleWrapper>
       <template v-slot:code-items>
         <div class="items-center px-6 py-4 space-y-2">
           <div class="inline-flex me-6">
             <div class="flex flex-row items-center space-x-2">
-              <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultMedium" />
-              <label class="text-md" for="checkDefaultMedium">Default</label>
+              <input class="rounded-[4px] p-2" type="checkbox" value="" id="checkDefaultDefault" />
+              <label class="text-md" for="checkDefaultDefault">Default</label>
             </div>
           </div>
 
@@ -173,10 +68,10 @@ const checkboxV1_large = ref(
                 class="rounded-[4px] p-2"
                 type="checkbox"
                 value=""
-                id="checkCheckedMedium"
+                id="checkCheckedDefault"
                 checked
               />
-              <label class="text-md" for="checkCheckedMedium">Checked</label>
+              <label class="text-md" for="checkCheckedDefault">Checked</label>
             </div>
           </div>
 
@@ -186,10 +81,10 @@ const checkboxV1_large = ref(
                 class="rounded-[4px] p-2"
                 type="checkbox"
                 value=""
-                id="checkDefaultDisabledMedium"
+                id="checkDefaultDisabledDefault"
                 disabled
               />
-              <label class="text-md text-slate-600" for="checkDefaultDisabledMedium"
+              <label class="text-md text-slate-600" for="checkDefaultDisabledDefault"
                 >Default Disabled</label
               >
             </div>
@@ -201,11 +96,11 @@ const checkboxV1_large = ref(
                 class="rounded-[4px] p-2"
                 type="checkbox"
                 value=""
-                id="checkCheckedDisabledMedium"
+                id="checkCheckedDisabledDefault"
                 checked
                 disabled
               />
-              <label class="text-md text-slate-600" for="checkCheckedDisabledMedium"
+              <label class="text-md text-slate-600" for="checkCheckedDisabledDefault"
                 >Checked Disabled</label
               >
             </div>
@@ -215,73 +110,11 @@ const checkboxV1_large = ref(
 
       <template v-slot:code-example>
         <CodeExample
-          :codeHTML="checkboxV1_medium"
+          :codeHTML="checkboxV1_default"
           :isHTML="true"
           :codeCSS="checkboxV1_common_css"
           :isCSS="true"
         />
-      </template>
-    </ExampleWrapper>
-
-    <PageHeader3 sectionTitle="Large" class="mt-8" />
-    <ExampleWrapper>
-      <template v-slot:code-items>
-        <div class="items-center px-6 py-4 space-y-2">
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input class="rounded-[4px] p-2.5" type="checkbox" value="" id="checkDefaultLarge" />
-              <label class="text-xl" for="checkDefaultLarge">Default</label>
-            </div>
-          </div>
-
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input
-                class="rounded-[4px] p-2.5"
-                type="checkbox"
-                value=""
-                id="checkCheckedLarge"
-                checked
-              />
-              <label class="text-xl" for="checkCheckedLarge">Checked</label>
-            </div>
-          </div>
-
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input
-                class="rounded-[4px] p-2.5"
-                type="checkbox"
-                value=""
-                id="checkDefaultDisabledLarge"
-                disabled
-              />
-              <label class="text-xl text-slate-600" for="checkDefaultDisabledLarge"
-                >Default Disabled</label
-              >
-            </div>
-          </div>
-
-          <div class="inline-flex me-6">
-            <div class="flex flex-row items-center space-x-2">
-              <input
-                class="rounded-[4px] p-2.5"
-                type="checkbox"
-                value=""
-                id="checkCheckedDisabledLarge"
-                checked
-                disabled
-              />
-              <label class="text-xl text-slate-600" for="checkCheckedDisabledLarge"
-                >Checked Disabled</label
-              >
-            </div>
-          </div>
-        </div>
-      </template>
-
-      <template v-slot:code-example>
-        <CodeExample :codeHTML="checkboxV1_large" :isHTML="true" />
       </template>
     </ExampleWrapper>
   </section>

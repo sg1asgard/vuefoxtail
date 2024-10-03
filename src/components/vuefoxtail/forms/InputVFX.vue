@@ -26,10 +26,7 @@ const inputV1_default = ref(
 <template>
   <section>
     <div class="mb-12">
-      <p>
-        By default, the buttons have three sizes as Small, Medium, Large and one with icon. You can
-        add the icon to the rest of the sizes as show in the examples.
-      </p>
+      <p>...</p>
 
       <div class="mt-4">
         <AlertWrapper variant="info">
@@ -42,7 +39,6 @@ const inputV1_default = ref(
     </div>
 
     <!-- Default -->
-    <PageHeader3 sectionTitle="Default" class="mt-8" />
     <ExampleWrapper isHtml isCss isJs>
       <template v-slot:code-items>
         <div class="flex flex-col space-y-3 items-center px-6 py-4">
