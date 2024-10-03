@@ -64,6 +64,11 @@ const router = createRouter({
           path: 'forms/input',
           name: 'form_input',
           component: () => import('@/views/components/FormInputView.vue')
+        },
+        {
+          path: 'forms/range',
+          name: 'form_range',
+          component: () => import('@/views/components/FormRangeView.vue')
         }
       ]
     }
